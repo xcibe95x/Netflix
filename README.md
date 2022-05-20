@@ -33,10 +33,11 @@ I always invite to respect any trademark included my own, and don't do anything 
 Netflix and the logo N are registered trademarks of Netflix, Inc.
 
 
+
 [//]: # (Reference links for the body)
 
-    [cibe]: <https://github.com/xcibe95x/>
-    [emanu]: <https://github.com/EmanueleGurini/>
-    [god-davide]: <https://github.com/DavideLAbbate/>
-    [leony]: <https://github.com/LeonyMalasanManalili/>
-    [gabri]: <https://github.com/gfiacconi/>
+[cibe]: <https://github.com/xcibe95x/>
+[emanu]: <https://github.com/EmanueleGurini/>
+[god-davide]: <https://github.com/DavideLAbbate/>
+[leony]: <https://github.com/LeonyMalasanManalili/>
+[gabri]: <https://github.com/gfiacconi/>
