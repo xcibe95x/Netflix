@@ -20,7 +20,6 @@ This project will run in HTML/CSS as a training session, with a team of four peo
 
 During the journey i will assign tasks to the members, eventually assign a task to myself and review and adjust the code to reach the desired level of quality.
 
-
 ## License
 
 MIT
