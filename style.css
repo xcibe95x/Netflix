@@ -33,14 +33,17 @@ html {
     --indigo: #6610f2;
     --purple: #6f42c1;
     --pink: #e83e8c;
-    --red: #dc3545;
+    --red: #B9090B;
     --orange: #fd7e14;
     --yellow: #ffc107;
     --green: #28a745;
     --teal: #20c997;
     --cyan: #17a2b8;
     --white: #fff;
-    --gray: #6c757d;
+    --opacity-white: rgba(255, 255, 255, 0.3);
+    --smokewhite: #E5E5E5;
+    --midgray: rgb(109, 109, 110, 0.3);
+    --gray: #808080;
     --gray-dark: #343a40;
     --primary: #007bff;
     --secondary: #6c757d;
@@ -50,6 +53,7 @@ html {
     --danger: #dc3545;
     --light: #f8f9fa;
     --dark: #343a40;
+    --black: #141414;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
@@ -60,5 +64,5 @@ html {
 /* GENERAL */
 
 body {
-    background: var(--dark)
+    background: var(--black);
 }
