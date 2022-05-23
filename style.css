@@ -62,3 +62,48 @@ html {
 body {
     background: var(--dark)
 }
+
+/* index Page */
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 64px;
+}
+
+.logo {
+  padding: 20px 60px;
+}
+
+.index-container{
+  width: 70%;
+  margin: 10% auto;
+}
+
+.profile-container {
+  margin-top: 2% ;
+  display: flex;
+  padding: 30px 0 30px 0 ;
+  justify-content: space-around;
+}
+
+.profile h4 {
+  text-align: center;
+  padding-top: 20px ;
+  color: var(--gray);
+  font-size: 26px;
+  opacity: .65;
+}
+
+.btn-profili{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-gestisci-profili {
+  padding: 10px 30px;
+  font-size: 26px;
+  background: transparent;
+  border: 1px solid var(--gray);
+  color: var(--gray); 
+}
