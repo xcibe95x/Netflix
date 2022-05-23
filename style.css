@@ -152,6 +152,91 @@ body {
     background: var(--dark)
 }
 
+/* index Page */
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 64px;
+}
+
+.logo{
+  padding: 20px 60px;
+}
+
+.index-container{
+  width: 70%;
+  margin: 10% auto;
+}
+
+.profile-container {
+  margin-top: 2% ;
+  display: flex;
+  padding: 30px 0 30px 0 ;
+  justify-content: space-around;
+}
+
+.profile h4 {
+  text-align: center;
+  padding-top: 20px ;
+  color: var(--gray);
+  font-size: 26px;
+  opacity: .65;
+}
+
+.btn-profili{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-gestisci-profili {
+  padding: 10px 30px;
+  font-size: 26px;
+  background: transparent;
+  border: 1px solid var(--gray);
+  color: var(--gray); 
+}
+
+@media screen and (max-width:768px) {
+  .logo{
+    text-align: center;
+  }
+  h1{
+    display: none;
+  }
+  .profile-container{
+    flex-wrap: wrap;
+  }
+  .profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .profile h4 {
+    padding: 20px;
+  }
+}
+
+@media  screen and (max-width:576px) {
+
+  .logo{
+    text-align: center;
+  }
+  h1{
+    display: none;
+  }
+  .profile-container{
+    flex-wrap: wrap;
+  }
+  .profile{
+    flex-basis: 25%;
+  }
+}
+
+/* End index page  */
+
+
 ul{list-style-type: none;}
 
 /* Utilities */
