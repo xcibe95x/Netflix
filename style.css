@@ -1,11 +1,11 @@
 /* Fonts */
 @font-face {
   font-family: 'Netflix Sans';
-  src: url('NetflixSans-Medium.eot');
-  src: url('NetflixSans-Medium.eot?#iefix') format('embedded-opentype'),
-      url('NetflixSans-Medium.woff2') format('woff2'),
-      url('NetflixSans-Medium.woff') format('woff'),
-      url('NetflixSans-Medium.ttf') format('truetype');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Medium.eot');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Medium.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/netflix-san/NetflixSans-Medium.woff2') format('woff2'),
+      url('./assets/fonts/netflix-san/NetflixSans-Medium.woff') format('woff'),
+      url('./assets/fonts/netflix-san/NetflixSans-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -13,11 +13,11 @@
 
 @font-face {
   font-family: 'Netflix Sans Icon';
-  src: url('NetflixSans-Icon.eot');
-  src: url('NetflixSans-Icon.eot?#iefix') format('embedded-opentype'),
-      url('NetflixSans-Icon.woff2') format('woff2'),
-      url('NetflixSans-Icon.woff') format('woff'),
-      url('NetflixSans-Icon.ttf') format('truetype');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Icon.eot');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Icon.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/netflix-san/NetflixSans-Icon.woff2') format('woff2'),
+      url('./assets/fonts/netflix-san/NetflixSans-Icon.woff') format('woff'),
+      url('./assets/fonts/netflix-san/NetflixSans-Icon.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -25,11 +25,11 @@
 
 @font-face {
   font-family: 'Netflix Sans';
-  src: url('NetflixSans-Light.eot');
-  src: url('NetflixSans-Light.eot?#iefix') format('embedded-opentype'),
-      url('NetflixSans-Light.woff2') format('woff2'),
-      url('NetflixSans-Light.woff') format('woff'),
-      url('NetflixSans-Light.ttf') format('truetype');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Light.eot');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Light.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/netflix-san/NetflixSans-Light.woff2') format('woff2'),
+      url('./assets/fonts/netflix-san/NetflixSans-Light.woff') format('woff'),
+      url('./assets/fonts/netflix-san/NetflixSans-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -37,11 +37,11 @@
 
 @font-face {
   font-family: 'Netflix Sans';
-  src: url('NetflixSans-Black.eot');
-  src: url('NetflixSans-Black.eot?#iefix') format('embedded-opentype'),
-      url('NetflixSans-Black.woff2') format('woff2'),
-      url('NetflixSans-Black.woff') format('woff'),
-      url('NetflixSans-Black.ttf') format('truetype');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Black.eot');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Black.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/netflix-san/NetflixSans-Black.woff2') format('woff2'),
+      url('./assets/fonts/netflix-san/NetflixSans-Black.woff') format('woff'),
+      url('./assets/fonts/netflix-san/NetflixSans-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -49,11 +49,11 @@
 
 @font-face {
   font-family: 'Netflix Sans';
-  src: url('NetflixSans-Bold.eot');
-  src: url('NetflixSans-Bold.eot?#iefix') format('embedded-opentype'),
-      url('NetflixSans-Bold.woff2') format('woff2'),
-      url('NetflixSans-Bold.woff') format('woff'),
-      url('NetflixSans-Bold.ttf') format('truetype');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Bold.eot');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/netflix-san/NetflixSans-Bold.woff2') format('woff2'),
+      url('./assets/fonts/netflix-san/NetflixSans-Bold.woff') format('woff'),
+      url('./assets/fonts/netflix-san/NetflixSans-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -61,11 +61,11 @@
 
 @font-face {
   font-family: 'Netflix Sans';
-  src: url('NetflixSans-Thin.eot');
-  src: url('NetflixSans-Thin.eot?#iefix') format('embedded-opentype'),
-      url('NetflixSans-Thin.woff2') format('woff2'),
-      url('NetflixSans-Thin.woff') format('woff'),
-      url('NetflixSans-Thin.ttf') format('truetype');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Thin.eot');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Thin.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/netflix-san/NetflixSans-Thin.woff2') format('woff2'),
+      url('./assets/fonts/netflix-san/NetflixSans-Thin.woff') format('woff'),
+      url('./assets/fonts/netflix-san/NetflixSans-Thin.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -73,11 +73,11 @@
 
 @font-face {
   font-family: 'Netflix Sans';
-  src: url('NetflixSans-Regular.eot');
-  src: url('NetflixSans-Regular.eot?#iefix') format('embedded-opentype'),
-      url('NetflixSans-Regular.woff2') format('woff2'),
-      url('NetflixSans-Regular.woff') format('woff'),
-      url('NetflixSans-Regular.ttf') format('truetype');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Regular.eot');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/netflix-san/NetflixSans-Regular.woff2') format('woff2'),
+      url('./assets/fonts/netflix-san/NetflixSans-Regular.woff') format('woff'),
+      url('./assets/fonts/netflix-san/NetflixSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -149,18 +149,17 @@ html {
 /* GENERAL */
 
 body {
-    background: var(--dark)
+    background: var(--black)
 }
-
-/* index Page */
 
 h1 {
   text-align: center;
   color: #fff;
   font-size: 64px;
+  font-family: 'Netflix Sans';
 }
 
-.logo{
+.logo {
   padding: 20px 60px;
 }
 
@@ -174,6 +173,11 @@ h1 {
   display: flex;
   padding: 30px 0 30px 0 ;
   justify-content: space-around;
+}
+
+.profile a img {
+  height: 200px;
+  width: 200px;
 }
 
 .profile h4 {
