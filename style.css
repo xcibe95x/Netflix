@@ -62,3 +62,42 @@ html {
 body {
     background: var(--dark)
 }
+
+ul{list-style-type: none;}
+
+/* Utilities */
+
+.d-flex{display: flex;}
+
+/* NAVBAR */
+
+.navdesktop{
+  width: 100%;
+  padding: 25px 60px 25px 60px;
+  align-items: center;
+  background: var(--141414);
+}
+
+.logo{
+  margin-right: 32px;
+}
+
+.navdesktop div:nth-child(2){
+  flex-grow: 1;
+}
+
+.navdesktop div:last-child img{
+  height: 20px;
+  width: 20px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: var(--white);
+}
+
+.ul-1,.ul-2
+{
+  gap: 20px;
+}
+
