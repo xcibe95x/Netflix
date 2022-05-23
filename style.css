@@ -163,6 +163,13 @@ h1 {
   line-height: 81.73px;
 }
 
+h3 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 33.2px;
+  color: var(--smokeWhite);
+}
+
 h4 {
   font-size: 26px;
   font-weight: 400;
@@ -257,13 +264,12 @@ ul{list-style-type: none;}
 
 .d-flex{display: flex;}
 
-/* NAVBAR */
+/* Navbar */
 
 .navdesktop{
   width: 100%;
   padding: 25px 60px 25px 60px;
   align-items: center;
-  background: var(--141414);
 }
 
 .logo{
@@ -289,3 +295,28 @@ ul li a{
   gap: 20px;
 }
 
+/* Movie Cards Sections */
+
+.movie-section {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 60px;
+}
+
+.poster-container {
+  display: flex;
+  gap: 5px;
+}
+
+.movie-poster {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.movie-poster img {
+  height: 160px;
+  width: 285px;
+  border-radius: 2px;
+}
+
+/* End of Movie Cards Sections */
