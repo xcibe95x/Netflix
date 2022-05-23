@@ -3,6 +3,8 @@
 
 This project will run in HTML/CSS as a training session, with a team of four people, i will give directions and review code commits and eventually allow the push.
 
+# Repo Demo URL
+https://nft.xcibe95x.com/
 
 # Team
 
@@ -12,7 +14,7 @@ This project will run in HTML/CSS as a training session, with a team of four peo
 ### Team Members
 - [Leony Manalili][leony]
 - [Davide L'Abbate][god-davide]
-- [Gabriele Fiacconi][gabri]
+- [Gabriele Fiacconi][#redacted-notcontributing]
 
 ## Supervisor 
 - [Emanuele Gurini][emanu]
