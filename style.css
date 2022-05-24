@@ -264,12 +264,13 @@ ul{list-style-type: none;}
 
 .d-flex{display: flex;}
 
-/* Navbar */
+/* navbar */
 
 .navdesktop{
   width: 100%;
   padding: 25px 60px 25px 60px;
   align-items: center;
+  background: transparent;
 }
 
 .logo{
@@ -285,15 +286,59 @@ ul{list-style-type: none;}
   width: 20px;
 }
 
-ul li a{
+ul li a,.dropdown a{
   text-decoration: none;
   color: var(--white);
 }
 
-.ul-1,.ul-2
-{
+.ul-1,.ul-2{
   gap: 20px;
 }
+
+/* dropdown users */
+
+.ul-2{
+  position: relative;
+}
+
+.dropdown
+{
+  background: var(--black);
+  position: absolute; 
+  left: 0;
+  top: 50px;
+  visibility: hidden;
+  width: 170px;
+  padding: 16px 0;
+}
+
+.licontainer:hover .dropdown{
+  visibility: visible;
+}
+
+.navdesktop .licontainer li{
+  padding: 8px 16px;
+}
+
+.navdesktop .licontainer li img{
+  margin-right: 8px;
+}
+
+.navdesktop .licontainer .dropdown li{
+  display: flex;
+  width:100%;
+  font-size: 14px;
+  align-items: center;
+}
+
+.dropdown p{
+  color: var(--white);
+  text-align: center;
+  font-size: 14px;
+  padding-top: 16px;
+}
+
+
 
 /* Movie Cards Sections */
 
