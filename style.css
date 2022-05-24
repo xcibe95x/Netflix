@@ -52,7 +52,7 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box; margin: 0; padding: 0;
+    box-sizing: border-box; margin: 0;
     font-family: 'Netflix Sans';
 }
 
@@ -142,7 +142,7 @@ h4 {
 }
 
 .logo {
-  padding: 25px 60px;
+  padding: 20px 60px;
 }
 
 .index-container{
@@ -269,10 +269,8 @@ ul{list-style-type: none;}
 /* navbar */
 
 .navdesktop{
-  width: 100%;
-  padding: 25px 60px 25px 60px;
+  width: 100%;  
   align-items: center;
-  background: transparent;
 }
 
 .navdesktop div:nth-child(2){
@@ -343,8 +341,17 @@ ul li a,.dropdown a{
 .movie-section {
   display: flex;
   flex-direction: column;
-  padding: 30px 60px;
+  padding: 0 60px 0 60px;
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
 }
+
+/* Hide ScrollBar */
+.movie-section::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
 
 .poster-container {
   display: flex;
@@ -357,9 +364,14 @@ ul li a,.dropdown a{
 }
 
 .movie-poster img {
-  height: 160px;
-  width: 285px;
+  max-height: 160px;
+  max-width: 285px;
   border-radius: 2px;
 }
+
+.section-title {
+  padding: 0 60px 0 60px;
+}
+
 
 /* End of Movie Cards Sections */
