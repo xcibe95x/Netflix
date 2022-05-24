@@ -142,7 +142,7 @@ h4 {
 }
 
 .logo {
-  padding: 20px 60px;
+  padding: 25px 60px;
 }
 
 .index-container{
@@ -275,10 +275,6 @@ ul{list-style-type: none;}
   background: transparent;
 }
 
-.logo{
-  margin-right: 32px;
-}
-
 .navdesktop div:nth-child(2){
   flex-grow: 1;
 }
@@ -341,6 +337,115 @@ ul li a,.dropdown a{
 }
 
 
+/* Movie poster */
+
+
+
+.movieposter {
+  width: 100vw;
+  height: 810px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(./assets/img/posters/MoviePoster.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.movieinfo-pos{
+  width: 636px;
+  height: 392px;
+  position: absolute;
+  top:200px;
+  left: 60px;
+}
+
+.movieinfo{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 15px;
+}
+
+.movieinfo .item1{
+  width: 408px;
+  height: 115px;
+  background-image: url(./assets/img/posters/MovieName.png);
+  background-position: bottom center;
+  background-size: cover ;
+  background-repeat: no-repeat;
+}
+
+.movieinfo .item2 p{
+    font-size: 30px;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.movieinfo .item2{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 408px;
+  height: 38px;
+  gap: 15px;
+}
+
+.movieinfo.item3{
+  width: 636px;
+  height: 132px;
+}
+.movieinfo .item3 p {
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.riproduci {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 433px;
+  height: 62px;
+}
+
+.play {
+  width: 32px;
+  height: 32px;
+  padding : 5px;
+  margin-right: 20px;
+}
+
+
+.btn-riproduci {
+  display: flex;
+  width: 212px;
+  height: 62px;
+  background: var(--white);
+  border-radius: 4px;
+  padding: 15px 30px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  border: 0;
+  align-items: center;
+  white-space:nowrap;
+}
+
+.btn-info {
+  background: var(--clearwhite);
+  color: var(--white);
+}
+
+.info {
+  width: 32px;
+  height: 32px;
+  padding : 3px;
+  margin-right: 20px;
+}
+/* End Movie poster */
+
 
 /* Movie Cards Sections */
 
@@ -348,6 +453,7 @@ ul li a,.dropdown a{
   display: flex;
   flex-direction: column;
   padding: 30px 60px;
+  z-index: 1;
 }
 
 .poster-container {
