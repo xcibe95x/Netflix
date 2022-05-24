@@ -14,6 +14,7 @@ https://nft.xcibe95x.com/
 ### Team Members
 - [Davide L'Abbate][god-davide]
 - [Leony Manalili][leony]
+- [Gabriele Fiacconi][gabri]
 
 ## Supervisor 
 - [Emanuele Gurini][emanu]
