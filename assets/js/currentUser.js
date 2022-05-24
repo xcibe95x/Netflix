@@ -10,7 +10,6 @@
 // Su PHP permette di scrivere una variabile nell'url, e potremo passare il valore
 // Nella pagina html e sostituire l'immagine linkando diversi URL dalla index
 
-
 // Emulate PHP $_GET
 var $_GET = new Array();
 function GET() {
@@ -24,9 +23,29 @@ GET();
 
 // Replace User Profile on Page Load
 window.onload = function() {
+
+	// No User - Show Default Profile Icon
+
 	if ($_GET['user'] == null) {
 		document.getElementById("profile-picture").innerHTML = `<img src="./assets/img/profiles/ProfilePicture2.png" alt="Profileimg">`;
 	}
+
+	if ($_GET['user'] == "zeus") {
+		document.getElementById("profile-picture").innerHTML = `<img src="./assets/img/profiles/ProfilePicture1.png" alt="Profileimg">`;
+	}
+
+	if ($_GET['user'] == "ade") {
+		document.getElementById("profile-picture").innerHTML = `<img src="./assets/img/profiles/ProfilePicture2.png" alt="Profileimg">`;
+	}
+
+	if ($_GET['user'] == "poseidone") {
+		document.getElementById("profile-picture").innerHTML = `<img src="./assets/img/profiles/ProfilePicture3.png" alt="Profileimg">`;
+	}
+
+	if ($_GET['user'] == "apollo") {
+		document.getElementById("profile-picture").innerHTML = `<img src="./assets/img/profiles/ProfilePicture4.png" alt="Profileimg">`;
+	}
+
 }
 
 
