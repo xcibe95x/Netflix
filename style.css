@@ -1,86 +1,51 @@
 /* Fonts */
 @font-face {
   font-family: 'Netflix Sans';
-  src: url('./assets/fonts/netflix-san/NetflixSans-Medium.eot');
-  src: url('./assets/fonts/netflix-san/NetflixSans-Medium.eot?#iefix') format('embedded-opentype'),
-      url('./assets/fonts/netflix-san/NetflixSans-Medium.woff2') format('woff2'),
-      url('./assets/fonts/netflix-san/NetflixSans-Medium.woff') format('woff'),
-      url('./assets/fonts/netflix-san/NetflixSans-Medium.ttf') format('truetype');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Medium.ttf');
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: 'Netflix Sans Icon';
-  src: url('./assets/fonts/netflix-san/NetflixSans-Icon.eot');
-  src: url('./assets/fonts/netflix-san/NetflixSans-Icon.eot?#iefix') format('embedded-opentype'),
-      url('./assets/fonts/netflix-san/NetflixSans-Icon.woff2') format('woff2'),
-      url('./assets/fonts/netflix-san/NetflixSans-Icon.woff') format('woff'),
-      url('./assets/fonts/netflix-san/NetflixSans-Icon.ttf') format('truetype');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Icon.ttf');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: 'Netflix Sans';
-  src: url('./assets/fonts/netflix-san/NetflixSans-Light.eot');
-  src: url('./assets/fonts/netflix-san/NetflixSans-Light.eot?#iefix') format('embedded-opentype'),
-      url('./assets/fonts/netflix-san/NetflixSans-Light.woff2') format('woff2'),
-      url('./assets/fonts/netflix-san/NetflixSans-Light.woff') format('woff'),
-      url('./assets/fonts/netflix-san/NetflixSans-Light.ttf') format('truetype');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Light.ttf');
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: 'Netflix Sans';
-  src: url('./assets/fonts/netflix-san/NetflixSans-Black.eot');
-  src: url('./assets/fonts/netflix-san/NetflixSans-Black.eot?#iefix') format('embedded-opentype'),
-      url('./assets/fonts/netflix-san/NetflixSans-Black.woff2') format('woff2'),
-      url('./assets/fonts/netflix-san/NetflixSans-Black.woff') format('woff'),
-      url('./assets/fonts/netflix-san/NetflixSans-Black.ttf') format('truetype');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Black.ttf');
   font-weight: 900;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: 'Netflix Sans';
-  src: url('./assets/fonts/netflix-san/NetflixSans-Bold.eot');
-  src: url('./assets/fonts/netflix-san/NetflixSans-Bold.eot?#iefix') format('embedded-opentype'),
-      url('./assets/fonts/netflix-san/NetflixSans-Bold.woff2') format('woff2'),
-      url('./assets/fonts/netflix-san/NetflixSans-Bold.woff') format('woff'),
-      url('./assets/fonts/netflix-san/NetflixSans-Bold.ttf') format('truetype');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Bold.ttf');
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: 'Netflix Sans';
-  src: url('./assets/fonts/netflix-san/NetflixSans-Thin.eot');
-  src: url('./assets/fonts/netflix-san/NetflixSans-Thin.eot?#iefix') format('embedded-opentype'),
-      url('./assets/fonts/netflix-san/NetflixSans-Thin.woff2') format('woff2'),
-      url('./assets/fonts/netflix-san/NetflixSans-Thin.woff') format('woff'),
-      url('./assets/fonts/netflix-san/NetflixSans-Thin.ttf') format('truetype');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Thin.ttf');
   font-weight: 100;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: 'Netflix Sans';
-  src: url('./assets/fonts/netflix-san/NetflixSans-Regular.eot');
-  src: url('./assets/fonts/netflix-san/NetflixSans-Regular.eot?#iefix') format('embedded-opentype'),
-      url('./assets/fonts/netflix-san/NetflixSans-Regular.woff2') format('woff2'),
-      url('./assets/fonts/netflix-san/NetflixSans-Regular.woff') format('woff'),
-      url('./assets/fonts/netflix-san/NetflixSans-Regular.ttf') format('truetype');
+  src: url('./assets/fonts/netflix-san/NetflixSans-Regular.ttf');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 /* CSS Resets */
@@ -88,6 +53,7 @@
 *::before,
 *::after {
     box-sizing: border-box; margin: 0; padding: 0;
+    font-family: 'Netflix Sans';
 }
 
 html {
