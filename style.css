@@ -307,6 +307,7 @@ ul li a,.dropdown a{
   visibility: hidden;
   width: 170px;
   padding: 16px 0;
+  z-index: 5;
 }
 
 .licontainer:hover .dropdown{
