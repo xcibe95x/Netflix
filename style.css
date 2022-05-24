@@ -218,18 +218,20 @@ h4 {
   color: var(--gray); 
 }
 
-@media screen and (max-width:1200px){
-  
+@media screen and (max-width:1280px){
+
   h1{
     font-size: 52px;
   }
+
   .profile{
     justify-content: center;
+    gap:20px;
   }
+
   .profile a img {
     height: 150px;
     width: 150px;
-    margin-right: 20px;
   }
   
 }
@@ -241,11 +243,11 @@ h4 {
   }
   .profile{
     justify-content: center;
+    gap:20px;
   }
   .profile a img {
     height: 150px;
     width: 150px;
-    margin-right: 20px;
   }
 
 }
