@@ -122,7 +122,6 @@ body {
 }
 
 h1 {
-  text-align: center;
   color: #fff;
   font-size: 64px;
   font-weight: 400;
@@ -143,12 +142,13 @@ h4 {
 }
 
 .logo {
-  padding: 20px 60px;
+  padding: 25px 60px;
 }
 
 .index-container{
   width: 70%;
   margin: 10% auto;
+  text-align: center;
 }
 
 .profile-container {
@@ -159,8 +159,8 @@ h4 {
 }
 
 .profile a img {
-  height: 200px;
-  width: 200px;
+  max-height: 200px;
+  max-width: 200px;
 }
 
 .profile h4 {
@@ -184,6 +184,40 @@ h4 {
   color: var(--gray); 
 }
 
+@media screen and (max-width:1280px){
+
+  h1{
+    font-size: 52px;
+  }
+
+  .profile{
+    justify-content: center;
+    gap:20px;
+  }
+
+  .profile a img {
+    height: 150px;
+    width: 150px;
+  }
+  
+}
+
+@media screen and (max-width: 992px){
+
+  h1{
+    font-size: 52px;
+  }
+  .profile{
+    justify-content: center;
+    gap:20px;
+  }
+  .profile a img {
+    height: 150px;
+    width: 150px;
+  }
+
+}
+
 @media screen and (max-width:768px) {
   .logo{
     text-align: center;
@@ -205,7 +239,7 @@ h4 {
   }
 }
 
-@media  screen and (max-width:576px) {
+@media  screen and (max-width: 576px) {
 
   .logo{
     text-align: center;
@@ -220,7 +254,9 @@ h4 {
     flex-basis: 25%;
   }
 }
-
+@media screen and (max-width:576px) {
+  
+}
 /* End index page  */
 
 
@@ -230,16 +266,13 @@ ul{list-style-type: none;}
 
 .d-flex{display: flex;}
 
-/* Navbar */
+/* navbar */
 
 .navdesktop{
   width: 100%;
   padding: 25px 60px 25px 60px;
   align-items: center;
-}
-
-.logo{
-  margin-right: 32px;
+  background: transparent;
 }
 
 .navdesktop div:nth-child(2){
@@ -251,15 +284,59 @@ ul{list-style-type: none;}
   width: 20px;
 }
 
-ul li a{
+ul li a,.dropdown a{
   text-decoration: none;
   color: var(--white);
 }
 
-.ul-1,.ul-2
-{
+.ul-1,.ul-2{
   gap: 20px;
 }
+
+/* dropdown users */
+
+.ul-2{
+  position: relative;
+}
+
+.dropdown
+{
+  background: var(--black);
+  position: absolute; 
+  left: 0;
+  top: 50px;
+  visibility: hidden;
+  width: 170px;
+  padding: 16px 0;
+}
+
+.licontainer:hover .dropdown{
+  visibility: visible;
+}
+
+.navdesktop .licontainer li{
+  padding: 8px 16px;
+}
+
+.navdesktop .licontainer li img{
+  margin-right: 8px;
+}
+
+.navdesktop .licontainer .dropdown li{
+  display: flex;
+  width:100%;
+  font-size: 14px;
+  align-items: center;
+}
+
+.dropdown p{
+  color: var(--white);
+  text-align: center;
+  font-size: 14px;
+  padding-top: 16px;
+}
+
+
 
 /* Movie Cards Sections */
 
