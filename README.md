@@ -12,9 +12,9 @@ https://nft.xcibe95x.com/
 - [Mauro Leoci][cibe]
 
 ### Team Members
-- [Leony Manalili][leony]
 - [Davide L'Abbate][god-davide]
-- [Gabriele Fiacconi][#redacted-notcontributing]
+- [Leony Manalili][leony]
+- [Gabriele Fiacconi][gabri]
 
 ## Supervisor 
 - [Emanuele Gurini][emanu]
