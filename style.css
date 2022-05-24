@@ -193,8 +193,8 @@ h4 {
 }
 
 .profile a img {
-  height: 200px;
-  width: 200px;
+  max-height: 200px;
+  max-width: 200px;
 }
 
 .profile h4 {
@@ -218,6 +218,38 @@ h4 {
   color: var(--gray); 
 }
 
+@media screen and (max-width:1200px){
+  
+  h1{
+    font-size: 52px;
+  }
+  .profile{
+    justify-content: center;
+  }
+  .profile a img {
+    height: 150px;
+    width: 150px;
+    margin-right: 20px;
+  }
+  
+}
+
+@media screen and (max-width: 992px){
+
+  h1{
+    font-size: 52px;
+  }
+  .profile{
+    justify-content: center;
+  }
+  .profile a img {
+    height: 150px;
+    width: 150px;
+    margin-right: 20px;
+  }
+
+}
+
 @media screen and (max-width:768px) {
   .logo{
     text-align: center;
@@ -239,7 +271,7 @@ h4 {
   }
 }
 
-@media  screen and (max-width:576px) {
+@media  screen and (max-width: 576px) {
 
   .logo{
     text-align: center;
@@ -254,7 +286,9 @@ h4 {
     flex-basis: 25%;
   }
 }
-
+@media screen and (max-width:576px) {
+  
+}
 /* End index page  */
 
 
