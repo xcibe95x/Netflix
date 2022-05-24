@@ -142,7 +142,7 @@ h4 {
 }
 
 .logo {
-  padding: 20px 60px;
+  padding: 25px 60px;
 }
 
 .index-container{
@@ -273,10 +273,6 @@ ul{list-style-type: none;}
   padding: 25px 60px 25px 60px;
   align-items: center;
   background: transparent;
-}
-
-.logo{
-  margin-right: 32px;
 }
 
 .navdesktop div:nth-child(2){
