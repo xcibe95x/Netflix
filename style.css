@@ -443,6 +443,13 @@ ul li a,.dropdown a{
   padding : 3px;
   margin-right: 20px;
 }
+
+.popular-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 /* End Movie poster */
 
 
@@ -455,8 +462,6 @@ ul li a,.dropdown a{
   overflow-x: scroll;
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
-  padding: 30px 60px;
-  z-index: 1;
 }
 
 /* Hide ScrollBar */
@@ -481,8 +486,39 @@ ul li a,.dropdown a{
   border-radius: 2px;
 }
 
+.big-movie-poster img {
+  max-height: 575px;
+  max-width: 285px;
+  border-radius: 2px;
+}
+
 .section-title {
   padding: 0 60px 0 60px;
+}
+
+.movie-poster {
+
+  cursor: pointer;
+}
+
+.movie-poster:hover > .media-player {
+  display: block;
+
+}
+
+.media-player {
+  display: none;
+  position: absolute;
+  bottom: initial;
+  height: 300px;
+  width: 300px;
+  background: var(--dark);
+  left: initial;
+  border-radius: 4px;
+  z-index: 999;
+  background-image: url('./assets/img/posters/MoviePoster_29.png');
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 
