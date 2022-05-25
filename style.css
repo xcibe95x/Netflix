@@ -524,3 +524,36 @@ ul li a,.dropdown a{
 
 
 /* End of Movie Cards Sections */
+
+/* Start Top 10 Images Sections */
+
+.top10flex
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top10flex img{
+  z-index: 1;
+  max-height: 200px;
+}
+
+.numberstop{
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 900;
+  text-shadow: 
+  -3px -3px 0 gray,  
+   3px -3px 0 gray,
+  -3px 3px 0 gray,
+   3px 3px 0 gray;
+  font-size: 250px;
+  position: relative;
+  line-height: 250px;
+  left: 6%;
+}
+
+.top10container{
+  padding-left: 32px;
+  justify-content: space-around;
+}
