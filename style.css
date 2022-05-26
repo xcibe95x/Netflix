@@ -355,12 +355,13 @@ ul li a,.dropdown a{
 {
   background: var(--black);
   position: absolute; 
-  left: 0;
-  top: 50px;
   visibility: hidden;
-  width: 170px;
+  width: 200px;
   padding: 16px 0;
-  z-index: 5;
+  z-index: 1;
+  transition: ease-in 0.2s;
+  right: 0;
+  top: 84px;
 }
 
 .licontainer:hover .dropdown{
