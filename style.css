@@ -268,10 +268,13 @@ ul{list-style-type: none;}
 
 /* navbar */
 
-.navdesktop{
+.navdesktop{ 
   width: 100%;  
   align-items: center;
-  background: transparent;
+  padding-right: 16px;
+  background: #18181899; 
+  position: fixed; 
+  z-index: 2;
 }
 
 .navdesktop div:nth-child(2){
@@ -289,13 +292,18 @@ ul li a,.dropdown a{
 }
 
 .ul-1,.ul-2{
-  gap: 20px;
+  gap: 15px;
+  position: relative;
+}
+
+.ul-1{
+  right: 40px;
 }
 
 /* dropdown users */
 
 .ul-2{
-  position: relative;
+  right: 15px;
 }
 
 .dropdown
@@ -551,9 +559,29 @@ ul li a,.dropdown a{
   position: relative;
   line-height: 250px;
   left: 6%;
+  top: 4%;
+}
+
+.top10flex:first-child .numberstop
+{
+  left: 14%;
 }
 
 .top10container{
-  padding-left: 32px;
-  justify-content: space-around;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
+
+.top10container::-webkit-scrollbar {
+  display: none;
+}
+
+.top10flex:last-child .numberstop
+{
+  letter-spacing: -2rem;
+  left: 0;
+}
+
+/* top 10 section end */
+
+
