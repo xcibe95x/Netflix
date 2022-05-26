@@ -7,21 +7,28 @@
     <script type="text/javascript" src="./assets/js/currentUser.js"></script>
     <link rel="stylesheet" href="style.css">
 
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+
     <title>Netflix</title>
 
 </head>
 
 <body>
 
-    <nav class="navdesktop">
+
+    <!-- NAVBAR -->
+
+    <nav class="navdesktop d-flex">
         
         <div class="logo">
-            <img src="./assets/img/logo.png" alt="Logoimg">
+            <img src="assets/img/logo.png" alt="Logoimg">
         </div>
 
-        <!-- Menu Items Section -->
-        <div class="nav-container">
-            <ul class="nav-links">
+        <div>
+            <ul class="ul-1 d-flex">
                 <li><a href="#"><strong>Home</strong></a></li>
                 <li><a href="#">Serie Tv</a></li>
                 <li><a href="#">Film</a></li>
@@ -29,40 +36,40 @@
                 <li><a href="#">Audio e Sottotitoli</a></li>
             </ul>
         </div>
-    
-        <div class="nav-container">
-            <ul class="nav-items">
+
+        <div>
+            <ul class="ul-2 d-flex">
                 <li>
-                    <a href="#"><img src="./assets/img/navigation/Lensimg.png" alt="imglens"></a>
+                    <a href="#"><img src="assets/img/navigation/Lensimg.png" alt="imglens"></a>
                 </li>
-    
+
                 <li>                
-                    <a href="#"><img src="./assets/img/navigation/campanella.png" alt="campanellaimg"></a>
+                    <a href="#"><img src="assets/img/navigation/campanella.png" alt="campanellaimg"></a>
                 </li>
-    
+
                 <li>
-                    <a href="#"><img src="./assets/img/profiles/ProfilePicture3.png" alt="Profileimg"></a>
+                    <a href="#"><img src="assets/img/profiles/ProfilePicture3.png" alt="Profileimg"></a>
                 </li>
-    
+
                 <li class="licontainer">
-    
-                    <a href="#"><img src="./assets/img/navigation/Downicon.png" alt="" class="dropdownimg"></a>
-    
+
+                    <a href="#"><img src="assets/img/navigation/Downicon.png" alt="" class="dropdownimg"></a>
+
                     <ul class="dropdown">
                         <li>
-                            <img src="./assets/img/profiles/ProfilePicture1.png" alt="">
+                            <img src="assets/img/profiles/ProfilePicture1.png" alt="">
                             <a href="#">Birba</a>
                         </li>
                         <li>
-                            <img src="./assets/img/profiles/ProfilePicture2.png" alt="">
+                            <img src="assets/img/profiles/ProfilePicture2.png" alt="">
                             <a href="#">Hitler</a>
                         </li>
                         <li>
-                            <img src="./assets/img/profiles/ProfilePicture3.png" alt="">
+                            <img src="assets/img/profiles/ProfilePicture3.png" alt="">
                             <a href="#">Irene</a>
                         </li>
                         <li>
-                            <img src="./assets/img/profiles/ProfilePicture4.png" alt="">
+                            <img src="assets/img/profiles/ProfilePicture4.png" alt="">
                             <a href="#">the nurse</a>
                         </li>
                         <li>
@@ -82,13 +89,21 @@
                         <p>Esci Da Netflix</p>
                     </ul>
                 </li>
+                
+
             </ul>  
+
         </div>
-    
+
+
     </nav>
 
+
     <div class="movieposter">
+
+
         <div class="movieinfo-pos">
+
             <div class="movieinfo">
                 <div class="item1">
                 </div>
@@ -103,62 +118,59 @@
                         <button class="btn-riproduci"><div class="play"><img src="./assets/img/posters/VectorPlay.png" alt="Play"></div>Riproduci</button>
                         <button class="btn-riproduci btn-info"><div class="info"><img src="./assets/img/posters/VectorInfo.png" alt="info"></div>Altre info</button>
                     </div>  
+                </div>
             </div>
         </div>
-    </div>
- 
+
     <!-- Popular Section -->
 <div class="popular-container">
     <h3 class="section-title">Netflix Popular</h3>
+
     <div class="movie-section">
         <div class="poster-container">
-            <div class="movie-poster">
-                <span class="top-ten"></span>
-                <div class="media-player"></div>
+            <div class="movie-poster top-ten">
+                <span class="media-player"></span>
                 <img src="./assets/img/posters/MoviePoster_1.png" alt="New Amsterdam">
             </div>
-            <div class="movie-poster">
-                <span class="top-ten"></span>
+            <div class="movie-poster top-ten">
                 <span class="media-player"></span>
                 <img src="./assets/img/posters/MoviePoster_2.png" alt="New Amsterdam">
             </div>
-            <div class="movie-poster">
+            <div class="movie-poster top-ten">
                 <span class="media-player"></span>
                 <img src="./assets/img/posters/MoviePoster_3.png" alt="New Amsterdam">
             </div>
-            <div class="movie-poster">
+            <div class="movie-poster top-ten">
                 <span class="media-player"></span>
                 <img src="./assets/img/posters/MoviePoster_4.png" alt="New Amsterdam">
             </div>
-            <div class="movie-poster">
+            <div class="movie-poster top-ten">
                 <span class="media-player"></span>
                 <img src="./assets/img/posters/MoviePoster_5.png" alt="New Amsterdam">
             </div>
-            <div class="movie-poster">
+            <div class="movie-poster top-ten">
                 <span class="media-player"></span>
                 <img src="./assets/img/posters/MoviePoster_5.png" alt="New Amsterdam">
             </div>
-            <div class="movie-poster">
+            <div class="movie-poster top-ten">
                 <span class="media-player"></span>
                 <img src="./assets/img/posters/MoviePoster_5.png" alt="New Amsterdam">
             </div>
-            <div class="movie-poster">
+            <div class="movie-poster top-ten">
                 <span class="media-player"></span>
                 <img src="./assets/img/posters/MoviePoster_5.png" alt="New Amsterdam">
             </div>
         </div>
     </div>
-    </div>   
+</div>   
     </div>
 
-
-    <div class="god-container">
         <!-- Titoli Del Momento Section -->
         <h3 class="section-title">I titoli del momento</h3>
-        
         <div class="movie-section">
+    
             <div class="poster-container">
-                <div class="movie-poster">
+                <div class="movie-poster top-ten">
                     <!-- Media Player -->
                     <div class="media-player">
 
@@ -166,106 +178,115 @@
                     <!-- Media Player End -->
                     <img src="./assets/img/posters/MoviePoster_6.png" alt="New Amsterdam">
                 </div>
-
-                <div class="movie-poster">
-                    <span class="media-player"></span>
+                <div class="movie-poster top-ten">
+                    <span class="media-player"><h2>Rick and Morty</h2></span>
                     <img src="./assets/img/posters/MoviePoster_7.png" alt="New Amsterdam">
                 </div>
-                <div class="movie-poster">
+                <div class="movie-poster top-ten">
                     <span class="media-player"></span>
                     <img src="./assets/img/posters/MoviePoster_8.png" alt="New Amsterdam">
                 </div>
-                <div class="movie-poster">
+                <div class="movie-poster top-ten">
                     <span class="media-player"></span>
                     <img src="./assets/img/posters/MoviePoster_9.png" alt="New Amsterdam">
                 </div>
-                <div class="movie-poster">
-                    <span class="media-player"></span>
-                    <img src="./assets/img/posters/MoviePoster_10.png" alt="New Amsterdam">
-                </div>
-                <div class="movie-poster">
-                    <span class="media-player"></span>
-                    <img src="./assets/img/posters/MoviePoster_10.png" alt="New Amsterdam">
-                </div>
-                <div class="movie-poster">
-                    <span class="media-player"></span>
-                    <img src="./assets/img/posters/MoviePoster_10.png" alt="New Amsterdam">
-                </div>
-                <div class="movie-poster">
+                <div class="movie-poster top-ten">
                     <span class="media-player"></span>
                     <img src="./assets/img/posters/MoviePoster_10.png" alt="New Amsterdam">
                 </div>
             </div>
         </div>
-    </div>
 
         <!-- Anime Section -->
-    <div class="god-container">
-    <h3 class="section-title">Anime e ispirati ad anime</h3>
+        <h3 class="section-title">Anime e ispirati ad anime</h3>
         <div class="movie-section">
             <div class="poster-container">
-                <div class="movie-poster">
+                <div class="movie-poster top-ten">
                     <span class="media-player"></span>
                     <img src="./assets/img/posters/MoviePoster_11.png" alt="New Amsterdam">
                 </div>
-                <div class="movie-poster">
-                    <span class="media-player"></span>
+                <div class="movie-poster top-ten">
                     <img src="./assets/img/posters/MoviePoster_12.png" alt="New Amsterdam">
                 </div>
-                <div class="movie-poster">
-                    <span class="media-player"></span>
+                <div class="movie-poster top-ten">
                     <img src="./assets/img/posters/MoviePoster_13.png" alt="New Amsterdam">
                 </div>
-                <div class="movie-poster">
-                    <span class="media-player"></span>
+                <div class="movie-poster top-ten">
                     <img src="./assets/img/posters/MoviePoster_14.png" alt="New Amsterdam">
                 </div>
-                <div class="movie-poster">
+                <div class="movie-poster top-ten">
                     <img src="./assets/img/posters/MoviePoster_15.png" alt="New Amsterdam">
                 </div>
             </div>
         </div>
-    </div>
 
         <!-- Long Images Section -->
         <h3 class="section-title">Random</h3>
         <div class="movie-section">
                     <div class="poster-container">
-                        <div class="big-movie-poster">
+                        <div class="big-movie-poster top-ten">
                             <img src="./assets/img/posters/MoviePoster_21.png" alt="New Amsterdam">
                         </div>
-                        <div class="big-movie-poster">
+                        <div class="big-movie-poster top-ten">
                             <img src="./assets/img/posters/MoviePoster_22.png" alt="New Amsterdam">
                         </div>
-                        <div class="big-movie-poster">
+                        <div class="big-movie-poster top-ten">
                             <img src="./assets/img/posters/MoviePoster_23.png" alt="New Amsterdam">
                         </div>
-                        <div class="big-movie-poster">
+                        <div class="big-movie-poster top-ten">
                             <img src="./assets/img/posters/MoviePoster_24.png" alt="New Amsterdam">
                         </div>
-                        <div class="big-movie-poster">
+                        <div class="big-movie-poster top-ten">
                             <img src="./assets/img/posters/MoviePoster_25.png" alt="New Amsterdam">
                         </div>
                     </div>
                 </div>
 
+        <!-- Top 10 Images -->
+        <h3 class="section-title">Top 10 delle serie TV in Italia oggi</h3>
+        <div class="movie-section">
+            <div class="poster-container top10container">
+                <div class="movie-poster top-ten top10flex">
+                    <span class="numberstop">1</span>
+                    <img src="assets/img/posters/MoviePoster_21.png" alt="movietopimg">
+                </div>
+                <div class="movie-poster top-ten top10flex">
+                    <span class="numberstop">2</span>
+                    <img src="assets/img/posters/MoviePoster_22.png" alt="movietopimg">
+                </div>
+                <div class="movie-poster top-ten top10flex">
+                    <span class="numberstop">3</span>
+                    <img src="assets/img/posters/MoviePoster_23.png" alt="movietopimg">
+                </div>
+                <div class="movie-poster top-ten top10flex">
+                    <span class="numberstop">4</span>
+                    <img src="assets/img/posters/MoviePoster_24.png" alt="movietopimg">
+                </div>
+                <div class="movie-poster top-ten top10flex">
+                    <span class="numberstop">5</span>
+                    <img src="assets/img/posters/MoviePoster_25.png" alt="movietopimg">
+                </div>
+            </div>
+        </div>
+
+
         <!-- Anime Section -->
         <h3 class="section-title">Anime e ispirati ad anime</h3>
         <div class="movie-section">
             <div class="poster-container">
-                <div class="movie-poster">
+                <div class="movie-poster top-ten">
                     <img src="./assets/img/posters/MoviePoster_11.png" alt="New Amsterdam">
                 </div>
-                <div class="movie-poster">
+                <div class="movie-poster top-ten">
                     <img src="./assets/img/posters/MoviePoster_12.png" alt="New Amsterdam">
                 </div>
-                <div class="movie-poster">
+                <div class="movie-poster top-ten">
                     <img src="./assets/img/posters/MoviePoster_13.png" alt="New Amsterdam">
                 </div>
-                <div class="movie-poster">
+                <div class="movie-poster top-ten">
                     <img src="./assets/img/posters/MoviePoster_14.png" alt="New Amsterdam">
                 </div>
-                <div class="movie-poster">
+                <div class="movie-poster top-ten">
                     <img src="./assets/img/posters/MoviePoster_15.png" alt="New Amsterdam">
                 </div>
             </div>
@@ -275,19 +296,19 @@
         <h3 class="section-title">Anime e ispirati ad anime</h3>
         <div class="movie-section">
             <div class="poster-container">
-                <div class="movie-poster">
+                <div class="movie-poster top-ten">
                     <img src="./assets/img/posters/MoviePoster_11.png" alt="New Amsterdam">
                 </div>
-                <div class="movie-poster">
+                <div class="movie-poster top-ten">
                     <img src="./assets/img/posters/MoviePoster_12.png" alt="New Amsterdam">
                 </div>
-                <div class="movie-poster">
+                <div class="movie-poster top-ten">
                     <img src="./assets/img/posters/MoviePoster_13.png" alt="New Amsterdam">
                 </div>
-                <div class="movie-poster">
+                <div class="movie-poster top-ten">
                     <img src="./assets/img/posters/MoviePoster_14.png" alt="New Amsterdam">
                 </div>
-                <div class="movie-poster">
+                <div class="movie-poster top-ten">
                     <img src="./assets/img/posters/MoviePoster_15.png" alt="New Amsterdam">
                 </div>
             </div>
