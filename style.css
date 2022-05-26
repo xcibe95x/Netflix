@@ -307,6 +307,11 @@ ul li a,.dropdown a{
   color: var(--white);
 }
 
+.dropdown li:nth-last-child(-n+6) img {
+  fill: var(--white);
+  filter: invert();
+}
+
 .nav-items {
   display: flex;
   gap: 20px;
