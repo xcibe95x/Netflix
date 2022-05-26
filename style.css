@@ -1,49 +1,49 @@
 /* Fonts */
 @font-face {
   font-family: 'Netflix Sans';
-  src: url('./assets/fonts/netflix-san/NetflixSans-Medium.ttf');
+  src: url('./assets/fonts/NetflixSansMedium.ttf');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Netflix Sans Icon';
-  src: url('./assets/fonts/netflix-san/NetflixSans-Icon.ttf');
+  src: url('./assets/fonts/NetflixSansIcon.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Netflix Sans';
-  src: url('./assets/fonts/netflix-san/NetflixSans-Light.ttf');
+  src: url('./assets/fonts/NetflixSansLight.ttf');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Netflix Sans';
-  src: url('./assets/fonts/netflix-san/NetflixSans-Black.ttf');
+  src: url('./assets/fonts/NetflixSansBlack.ttf');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Netflix Sans';
-  src: url('./assets/fonts/netflix-san/NetflixSans-Bold.ttf');
+  src: url('./assets/fonts/NetflixSansBold.ttf');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Netflix Sans';
-  src: url('./assets/fonts/netflix-san/NetflixSans-Thin.ttf');
+  src: url('./assets/fonts/NetflixSansThin.ttf');
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Netflix Sans';
-  src: url('./assets/fonts/netflix-san/NetflixSans-Regular.ttf');
+  src: url('./assets/fonts/NetflixSansRegular.ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -61,10 +61,6 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
-  }
-  
-  @-ms-viewport {
-    width: device-width;
   }
   
   article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -119,6 +115,9 @@ html,
 body {
     background: var(--black);
     font-family: 'Netflix Sans';
+    width: 100%;
+    min-width: 216px;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -254,6 +253,7 @@ h4 {
     flex-basis: 25%;
   }
 }
+
 @media screen and (max-width:576px) {
   
 }
@@ -269,16 +269,13 @@ ul{list-style-type: none;}
 /* navbar */
 
 .navdesktop{ 
+  display: flex;
   width: 100%;  
   align-items: center;
   padding-right: 16px;
   background: #18181899; 
   position: fixed; 
   z-index: 2;
-}
-
-.navdesktop div:nth-child(2){
-  flex-grow: 1;
 }
 
 .navdesktop div:last-child img{
@@ -291,20 +288,37 @@ ul li a,.dropdown a{
   color: var(--white);
 }
 
+.nav-items {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.nav-container {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
 .ul-1,.ul-2{
-  gap: 15px;
+  gap: 20px;
+}
+
+.ul-1 {
+  overflow: hidden;
+}
+
+.ul-2 {
   position: relative;
 }
 
-.ul-1{
-  right: 40px;
-}
 
 /* dropdown users */
-
-.ul-2{
-  right: 15px;
-}
 
 .dropdown
 {
@@ -330,14 +344,14 @@ ul li a,.dropdown a{
   margin-right: 8px;
 }
 
-.navdesktop .licontainer .dropdown li{
+.navdesktop .licontainer .dropdown li {
   display: flex;
-  width:100%;
+  width: 100%;
   font-size: 14px;
   align-items: center;
 }
 
-.dropdown p{
+.dropdown p {
   color: var(--white);
   text-align: center;
   font-size: 14px;
@@ -359,15 +373,15 @@ ul li a,.dropdown a{
   position: relative;
 }
 
-.movieinfo-pos{
-  width: 636px;
+.movieinfo-pos {
+  /* width: 636px; */ /* Create Bug */
   height: 392px;
   position: absolute;
   top:200px;
   left: 60px;
 }
 
-.movieinfo{
+.movieinfo {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -375,8 +389,8 @@ ul li a,.dropdown a{
   gap: 15px;
 }
 
-.movieinfo .item1{
-  width: 408px;
+.movieinfo .item1 {
+  /* width: 408px; */
   height: 115px;
   background-image: url(./assets/img/posters/MovieName.png);
   background-position: bottom center;
@@ -384,7 +398,7 @@ ul li a,.dropdown a{
   background-repeat: no-repeat;
 }
 
-.movieinfo .item2 p{
+.movieinfo .item2 p {
     font-size: 30px;
     color: var(--white);
     font-weight: 400;
@@ -395,13 +409,13 @@ ul li a,.dropdown a{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 408px;
+  /* width: 408px; */
   height: 38px;
   gap: 15px;
 }
 
 .movieinfo.item3{
-  width: 636px;
+  /* width: 636px; */
   height: 132px;
 }
 .movieinfo .item3 p {
@@ -414,7 +428,7 @@ ul li a,.dropdown a{
   display: flex;
   justify-content: center;
   gap: 20px;
-  width: 433px;
+  /* width: 433px; */
   height: 62px;
 }
 
@@ -438,7 +452,7 @@ ul li a,.dropdown a{
   line-height: 28px;
   border: 0;
   align-items: center;
-  white-space:nowrap;
+  white-space: nowrap; 
 }
 
 .btn-info {
@@ -457,6 +471,7 @@ ul li a,.dropdown a{
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 210px;
 }
 
 /* End Movie poster */
@@ -469,24 +484,20 @@ ul li a,.dropdown a{
   flex-direction: column;
   padding: 0 60px 0 60px;
   overflow-x: scroll;
+  overflow-y: hidden;
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
 }
 
 /* Hide ScrollBar */
 .movie-section::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
+   display: none; /* Safari and Chrome  */
 }
 
 
 .poster-container {
   display: flex;
   gap: 5px;
-}
-
-.movie-poster {
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .movie-poster img {
@@ -506,30 +517,59 @@ ul li a,.dropdown a{
 }
 
 .movie-poster {
-
+  position: relative;
   cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .movie-poster:hover > .media-player {
   display: block;
+  opacity: 1;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2,1.2);
+  -ms-transform: scale(1.2,1.2); /* IE 9 */
+  -webkit-transform: scale(1.2,1.2); /* Safari and Chrome */
+}
 
+.movie-poster:hover img {
+  display: none;
 }
 
 .media-player {
   display: none;
-  position: absolute;
-  bottom: initial;
-  height: 300px;
-  width: 300px;
-  background: var(--dark);
-  left: initial;
-  border-radius: 4px;
+  position: relative;
   z-index: 999;
+  height: 300px;
+  width: 284px;
+  background: var(--dark);
   background-image: url('./assets/img/posters/MoviePoster_29.png');
   background-position: top;
   background-repeat: no-repeat;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
+.god-container {
+  height: 250px;
+}
+
+.top-ten {
+  width: 26px;
+  height: 38px;
+  background-image: url('./assets/img/posters/Top10Card.png');
+  background-size: cover;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
 
 /* End of Movie Cards Sections */
 
@@ -585,3 +625,42 @@ ul li a,.dropdown a{
 /* top 10 section end */
 
 
+/* footer */
+footer {
+  padding: 20px;
+  text-align: left;
+  color: var(--dark);
+  margin-left: 70px;
+}
+
+.link {
+  padding: 50px;
+}
+
+.logos {
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  text-align:left;
+  display: block;
+  margin-left: 30px;
+  margin-bottom: 9px;
+}
+.logos a{
+  padding: 10px;
+}
+
+.logo {
+  color: var(--dark);
+}
+
+.sub-links ul {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.logoSocial{
+  color: var(--dark);
+  font-size: 2em;
+  height: 1em;
+}
