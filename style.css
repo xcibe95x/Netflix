@@ -287,7 +287,7 @@ ul{list-style-type: none;}
 
 /* navbar */
 
-.navdesktop{ 
+.navdesktop { 
   display: flex;
   width: 100%;  
   align-items: center;
@@ -297,9 +297,15 @@ ul{list-style-type: none;}
   z-index: 2;
 }
 
-.navdesktop div:last-child img{
+.navdesktop div:last-child img {
   height: 20px;
   width: 20px;
+}
+
+#profile-picture img {
+  height: 32px;
+  width: 32px;
+  border-radius: 4px;
 }
 
 ul li a,.dropdown a{
@@ -316,6 +322,7 @@ ul li a,.dropdown a{
   display: flex;
   gap: 20px;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .nav-links {
@@ -513,6 +520,11 @@ ul li a,.dropdown a{
   scrollbar-width: none;  /* Firefox */
 }
 
+.popular-container .movie-section {
+  position: absolute;
+  z-index: 2;
+}
+
 /* Hide ScrollBar */
 .movie-section::-webkit-scrollbar {
    display: none; /* Safari and Chrome  */
@@ -527,7 +539,7 @@ ul li a,.dropdown a{
 .movie-poster img {
   max-height: 160px;
   max-width: 285px;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .big-movie-poster img {
@@ -549,12 +561,6 @@ ul li a,.dropdown a{
 
 .movie-poster:hover > .media-player {
   display: block;
-  opacity: 1;
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2,1.2);
-  -ms-transform: scale(1.2,1.2); /* IE 9 */
-  -webkit-transform: scale(1.2,1.2); /* Safari and Chrome */
 }
 
 .movie-poster:hover img {
@@ -568,17 +574,37 @@ ul li a,.dropdown a{
   height: 300px;
   width: 284px;
   background: var(--dark);
-  background-image: url('./assets/img/posters/MoviePoster_29.png');
-  background-position: top;
-  background-repeat: no-repeat;
   border-radius: 8px;
   margin-top: 20px;
   margin-bottom: 20px;
-  -webkit-transition: all .4s ease-in-out;
-  -moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -ms-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+}
+
+.player-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.hero-vignette {
+  background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(20,20,20,0)),color-stop(15%,rgba(20,20,20,.15)),color-stop(29%,rgba(20,20,20,.35)),color-stop(44%,rgba(20,20,20,.58)),color-stop(68%,#141414),to(#141414));
+  background-image: -webkit-linear-gradient(top,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+  background-image: -moz- oldlinear-gradient(top,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+  background-image: -o-linear-gradient(top,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+  background-image: linear-gradient(to bottom,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 0 top;
+  background-repeat: repeat-x;
+  background-color: transparent;
+  width: 100%;
+  height: 14.7vw;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+
 }
 
 .god-container {
@@ -593,6 +619,7 @@ ul li a,.dropdown a{
   position: absolute;
   top: 10px;
   right: 0;
+  border-top-right-radius: 4px;
 }
 
 /* End of Movie Cards Sections */
