@@ -1,4 +1,4 @@
-# Netflix Project
+# Netflix Clone aka Godflex
 ## Accellerator Program Team Project.
 
 This project will run in HTML/CSS as a training session, with a team of four people, i will give directions and review code commits and eventually allow the push.
