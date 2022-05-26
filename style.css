@@ -574,6 +574,7 @@ ul li a,.dropdown a{
 .poster-container {
   display: flex;
   gap: 5px;
+  max-width: 20%;
 }
 
 .movie-poster img {
@@ -624,6 +625,44 @@ ul li a,.dropdown a{
 .player-image {
   width: 100%;
   border-radius: 8px 8px 0 0;
+}
+
+.player-container {
+  display: flex;
+  padding: 14px;
+  gap: 10px;
+}
+
+.player.container:last-child {
+  justify-content: flex-end;
+}
+
+.card-play, .card-add, .card-like, .card-more {
+  position: relative;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  align-items: flex-end;
+}
+
+.card-play {
+  background: var(--white);
+}
+
+.card-play::before {
+  content: url('./assets/img/posters/VectorPlay.svg');
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.card-add::before {
+  content: url('./assets/img/posters/VectorPlay.svg');
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  filter: invert();
 }
 
 .hero-vignette {
