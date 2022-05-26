@@ -26,7 +26,7 @@ window.onload = function() {
 
 	// No User - Show Default Profile Icon
 
-	if ($_GET['user'] == null) {
+	if ($_GET['user'] == '') {
 		document.getElementById("profile-picture").innerHTML = `<img src="./assets/img/profiles/ProfilePicture2.png" alt="Profileimg">`;
 	}
 

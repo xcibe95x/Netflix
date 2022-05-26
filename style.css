@@ -268,10 +268,14 @@ ul{list-style-type: none;}
 
 /* navbar */
 
-.navdesktop {
+.navdesktop{ 
   display: flex;
+  width: 100%;  
   align-items: center;
-  background: transparent;
+  padding-right: 16px;
+  background: #18181899; 
+  position: fixed; 
+  z-index: 2;
 }
 
 .navdesktop div:last-child img{
@@ -569,6 +573,57 @@ ul li a,.dropdown a{
 
 /* End of Movie Cards Sections */
 
+/* Start Top 10 Images Sections */
+
+.top10flex
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top10flex img{
+  z-index: 1;
+  max-height: 200px;
+}
+
+.numberstop{
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 900;
+  text-shadow: 
+  -3px -3px 0 gray,  
+   3px -3px 0 gray,
+  -3px 3px 0 gray,
+   3px 3px 0 gray;
+  font-size: 250px;
+  position: relative;
+  line-height: 250px;
+  left: 6%;
+  top: 4%;
+}
+
+.top10flex:first-child .numberstop
+{
+  left: 14%;
+}
+
+.top10container{
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.top10container::-webkit-scrollbar {
+  display: none;
+}
+
+.top10flex:last-child .numberstop
+{
+  letter-spacing: -2rem;
+  left: 0;
+}
+
+/* top 10 section end */
+
 
 /* footer */
 footer {
@@ -609,3 +664,4 @@ footer {
   font-size: 2em;
   height: 1em;
 }
+
