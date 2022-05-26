@@ -389,6 +389,46 @@ ul li a,.dropdown a{
   padding-top: 16px;
 }
 
+.browse {
+  display:none;  
+  justify-content: flex-start;
+}
+
+.browse a {
+  text-decoration: none;
+  color: var(--white);
+  font-size:12px;
+}
+
+.browse img {
+  width: 18px;
+  height: 18px;
+}
+.drop{
+  vertical-align: middle;
+  padding-left: 7px;
+}
+
+
+@media screen and (max-width:578px){
+  .licontainer a img, .nav-links,.item3 {
+    display:none;
+  }
+  .browse{
+    display: flex;
+  }
+  .logo{
+    padding: 10px 40px;
+  }
+  .logo img{
+    height: 25px;
+  }
+  .navdesktop{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+    background-color: transparent;
+    z-index: 9;
+  }
+}
 
 /* Movie poster */
 
