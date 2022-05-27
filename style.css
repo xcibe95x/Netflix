@@ -290,13 +290,10 @@ span {
 /* End index page  */
 
 
-ul{list-style-type: none;}
-
-/* Utilities */
-
-.d-flex{display: flex;}
 
 /* navbar */
+
+ul { list-style-type: none; }
 
 .navdesktop { 
   display: flex;
@@ -473,7 +470,7 @@ ul li a,.dropdown a{
 }
 
 .movieinfo .item1 {
-  max-width: 408px;
+  min-width: 408px;
   height: 115px;
   background-image: url(./assets/img/posters/MovieName.png);
   background-position: bottom center;
@@ -677,6 +674,11 @@ ul li a,.dropdown a{
   cursor: pointer;
 }
 
+.card-play:hover {
+  background: var(--smokeWhite);
+  border: 2px solid var(--smokeWhite);
+}
+
 .card-play {
   border: 2px solid var(--white);
   background: var(--white);
@@ -797,11 +799,6 @@ ul li a,.dropdown a{
 .top10flex:first-child .numberstop
 {
   left: 14%;
-}
-
-.top10container{
-  overflow-y: hidden;
-  overflow-x: scroll;
 }
 
 .top10container::-webkit-scrollbar {
