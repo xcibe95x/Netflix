@@ -127,6 +127,13 @@ h1 {
   line-height: 81.73px;
 }
 
+h2 {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 81.73px;
+}
+
 h3 {
   font-size: 26px;
   font-weight: 500;
@@ -138,6 +145,10 @@ h4 {
   font-size: 26px;
   font-weight: 400;
   line-height: 33.2px;
+}
+
+span {
+  color: white;
 }
 
 .logo {
@@ -605,7 +616,7 @@ ul li a,.dropdown a{
   display: block;
 }
 
-.movie-poster:hover img {
+.movie-poster:hover img:last-child {
   display: none;
 }
 
@@ -613,7 +624,7 @@ ul li a,.dropdown a{
   display: none;
   position: relative;
   z-index: 999;
-  height: 300px;
+  height: 268px;
   width: 284px;
   background: var(--black);
   border-radius: 8px;
@@ -632,23 +643,47 @@ ul li a,.dropdown a{
   display: flex;
   padding: 14px;
   gap: 10px;
+  color: white;
 }
 
-.player.container:last-child {
-  justify-content: flex-end;
+.player-container:last-child {
+  padding: 0 14px;
+}
+
+.vm14 {
+  color: white;
+  border: 1px solid var(--clearwhite);
+  padding: 1px 8px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.vm14::before {
+  content: 'VM14';
 }
 
 .card-play, .card-add, .card-like, .card-more {
   position: relative;
-  border: 2px solid white;
+  border: 2px solid var(--gray);
+  background: var(--dark);
   border-radius: 50%;
   width: 32px;
   height: 32px;
   align-items: flex-end;
 }
 
+.card-play:hover, .card-add:hover, .card-like:hover, .card-more:hover {
+  border: 2px solid var(--white);
+  cursor: pointer;
+}
+
 .card-play {
+  border: 2px solid var(--white);
   background: var(--white);
+}
+
+.card-more {
+  margin-left: 100px;
 }
 
 .card-play::before {
@@ -656,14 +691,40 @@ ul li a,.dropdown a{
   position: absolute;
   top: 2px;
   left: 2px;
+  transform: scale(.8);
 }
 
 .card-add::before {
-  content: url('./assets/img/posters/VectorPlay.svg');
+  content: url('./assets/img/navigation/plus.svg');
   position: absolute;
   top: 2px;
   left: 2px;
   filter: invert();
+  transform: scale(.8);
+}
+
+.card-like::before {
+  content: url('./assets/img/navigation/like.svg');
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  filter: invert();
+  transform: scale(.8);
+}
+
+.card-more::before {
+  content: url('./assets/img/navigation/down-arrow.svg');
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  filter: invert();
+  transform: scale(.8);
+}
+
+.compatible {
+  color: #45D068;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .hero-vignette {
