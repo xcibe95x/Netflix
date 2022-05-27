@@ -15,7 +15,6 @@ function GET() {
 GET();
 
 
-
 // Replace User Profile on Page Load
 window.onload = function() {
 
@@ -27,7 +26,7 @@ window.onload = function() {
 
 
 	if ($_GET['user'] == '') {
-		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture2.png" alt="Profileimg">`;
+		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture1.png" alt="Profileimg">`;
 		god.innerHTML = `Zeus`;
 		god2.innerHTML = `Zeus`;
 	}
@@ -57,7 +56,7 @@ window.onload = function() {
 	}
 
 	if ($_GET['id'] == "god") {
-		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture5.jpg" alt="Profileimg">`;
+		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture${$_GET['pic']}.png" alt="Profileimg">`;
 		god.innerHTML = $_GET['user'];
 		god2.innerHTML = $_GET['user'];
 	}
@@ -68,10 +67,13 @@ window.onload = function() {
 // Funzione Place Holder
 function AddGod() {
 	
+	const pics = ["1", "2", "3", "5"];
 	const gods = ["Era", "Demetra", "Estia", "Atena", "Artemide", "Afrodite", "Ares", "Efesto", "Hermes", "Dioniso"];
+	const randomNumber = pics[Math.floor(Math.random() * pics.length)];
 	const randomElement = gods[Math.floor(Math.random() * gods.length)];
 	let newGod = randomElement;
+	let newPic = randomNumber;
 	let newUser = document.getElementById("profiles");
-	newUser.innerHTML = `<div class="profile"><a href="./home.html?user=${newGod}&id=god"><img src="./assets/img/profiles/ProfilePicture5.jpg" alt="Profile5"></a><h4>${newGod}</h4></div>` + newUser.innerHTML;
+	newUser.innerHTML = `<div class="profile"><a href="./home.html?user=${newGod}&id=god&pic=${newPic}"><img src="./assets/img/profiles/ProfilePicture${newPic}.png" alt="Profile5"></a><h4>${newGod}</h4></div>` + newUser.innerHTML;
 
 }
