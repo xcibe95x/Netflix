@@ -393,6 +393,7 @@ ul li a,.dropdown a{
   text-decoration: none;
   color: var(--white);
   font-size:12px;
+  white-space: nowrap;
 }
 
 .browse img {
@@ -405,25 +406,7 @@ ul li a,.dropdown a{
 }
 
 
-@media screen and (max-width:320px){
-  .licontainer a img, .nav-links,.item3 {
-    display:none;
-  }
-  .browse{
-    display: flex;
-  }
-  .logo{
-    padding: 10px 40px;
-  }
-  .logo img{
-    height: 25px;
-  }
-  .navdesktop{
-    background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
-    background-color: transparent;
-    z-index: 9;
-  }
-}
+
 
 /* Movie poster */
 
@@ -434,7 +417,6 @@ ul li a,.dropdown a{
   height: 810px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(./assets/img/posters/MoviePoster.png);
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -852,4 +834,99 @@ footer {
   color: var(--dark);
   font-size: 2em;
   height: 1em;
+}
+
+
+@media screen and (max-width:380px){
+  .licontainer a img, .nav-links,.item3, .movieinfo .item3 {
+    display:none;
+  }
+
+  .browse{
+    display: flex;
+  }
+
+  .logo{
+    padding: 10px 20px;
+  }
+
+  .logo img{
+    height: 25px;
+    width: 80px;
+  }
+
+  .navdesktop{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+    background-color: transparent;
+    z-index: 9;
+    padding:0;
+  }
+
+  .movieposter{
+    background-size: contain;
+  }
+
+  .movieinfo-pos{
+    width: 15vw;
+    height: 5vh;
+    top:35px;
+    left:15px
+  }
+
+  .movieinfo .item1 {
+    min-width: 150px;
+    height: 50px;
+    background-size:  150px 50px;
+  }
+
+  .movieinfo .item2{
+    min-width: 200px;
+    height: 30px;
+    gap:5px;
+  }
+
+  .movieinfo .item2 p{
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+
+  .riproduci{
+    max-width: 250px;
+    height: 32px;
+    gap:5px;    
+    justify-content: flex-start;
+  }
+
+  .btn-riproduci{
+    width: 45%;
+    height: 32px;
+    font-size: 14px;
+    padding: 5px 20px;
+    line-height: 12px;
+    justify-content: center;
+  }
+  .play{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    padding: 0;
+  }
+  .play img{
+    width: 15px;
+    height: 15px;
+  }
+
+  .info img{
+    width: 20px;
+    height: 20px;
+  }
+
+  .info {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    padding: 0;
+  }
+
 }
