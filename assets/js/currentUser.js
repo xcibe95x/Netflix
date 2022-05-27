@@ -1,10 +1,3 @@
-// JS Facile Facile Plug and Play, Cosi possiamo toglierlo quando useremo ReactJS
-
-// Ho aggiunto questo file JS per fare la cosa dei profili che voleva fare davide
-// Per ora non modificatelo in nessun modo, lo ho già importato in Home.html
-// Deve andare solo in home HTML
-// Ho chiesto il permesso ad Emanuele quindi non stiamo cheattando.
-
 // PHP $_GET Request Equivalent
 // Da utente di PHP ho rubato questo Gist, che mi crea quello che è il comando $_GET['variabile']
 // Su PHP permette di scrivere una variabile nell'url, e potremo passare il valore
