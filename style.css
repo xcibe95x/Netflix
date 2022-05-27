@@ -159,8 +159,8 @@ h4 {
 }
 
 .profile a img {
-  max-height: 200px;
-  max-width: 200px;
+  max-height: 20vh;
+  max-width: 20vw;
   border-radius: 4px;
 }
 
@@ -212,11 +212,6 @@ h4 {
     justify-content: center;
     gap:20px;
   }
-
-  .profile a img {
-    height: 150px;
-    width: 150px;
-  }
   
 }
 
@@ -228,10 +223,6 @@ h4 {
   .profile{
     justify-content: center;
     gap:20px;
-  }
-  .profile a img {
-    height: 150px;
-    width: 150px;
   }
 
 }
@@ -410,7 +401,7 @@ ul li a,.dropdown a{
 }
 
 
-@media screen and (max-width:578px){
+@media screen and (max-width:320px){
   .licontainer a img, .nav-links,.item3 {
     display:none;
   }
