@@ -26,24 +26,27 @@ window.onload = function() {
 
 	// No User - Show Default Profile Icon
 
+	let profile = document.getElementById("profile-picture");
+	let god = document.getElementById("god-name");
+
 	if ($_GET['user'] == '') {
-		document.getElementById("profile-picture").innerHTML = `<img src="./assets/img/profiles/ProfilePicture2.png" alt="Profileimg">`;
+		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture2.png" alt="Profileimg">`;
 	}
 
 	if ($_GET['user'] == "zeus") {
-		document.getElementById("profile-picture").innerHTML = `<img src="./assets/img/profiles/ProfilePicture1.png" alt="Profileimg">`;
+		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture1.png" alt="Profileimg">`;
 	}
 
 	if ($_GET['user'] == "ade") {
-		document.getElementById("profile-picture").innerHTML = `<img src="./assets/img/profiles/ProfilePicture2.png" alt="Profileimg">`;
+		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture2.png" alt="Profileimg">`;
 	}
 
 	if ($_GET['user'] == "poseidone") {
-		document.getElementById("profile-picture").innerHTML = `<img src="./assets/img/profiles/ProfilePicture3.png" alt="Profileimg">`;
+		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture3.png" alt="Profileimg">`;
 	}
 
 	if ($_GET['user'] == "apollo") {
-		document.getElementById("profile-picture").innerHTML = `<img src="./assets/img/profiles/ProfilePicture4.png" alt="Profileimg">`;
+		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture4.png" alt="Profileimg">`;
 	}
 
 }
