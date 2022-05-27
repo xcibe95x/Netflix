@@ -21,6 +21,8 @@ function GET() {
 }
 GET();
 
+
+
 // Replace User Profile on Page Load
 window.onload = function() {
 
@@ -29,30 +31,47 @@ window.onload = function() {
 	let profile = document.getElementById("profile-picture");
 	let god = document.getElementById("god-name");
 
+
 	if ($_GET['user'] == '') {
 		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture2.png" alt="Profileimg">`;
+		god.innerHTML = `Zeus`;
 	}
 
 	if ($_GET['user'] == "zeus") {
 		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture1.png" alt="Profileimg">`;
+		god.innerHTML = `Zeus`;
 	}
 
 	if ($_GET['user'] == "ade") {
 		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture2.png" alt="Profileimg">`;
+		god.innerHTML = `Ade`;
 	}
 
 	if ($_GET['user'] == "poseidone") {
 		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture3.png" alt="Profileimg">`;
+		god.innerHTML = `Poseidone`;
 	}
 
 	if ($_GET['user'] == "apollo") {
 		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture4.png" alt="Profileimg">`;
+		god.innerHTML = `Apollo`;
+	}
+
+	if ($_GET['id'] == "god") {
+		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture5.jpg" alt="Profileimg">`;
+		god.innerHTML = $_GET['user'];
 	}
 
 }
 
 
 // Funzione Place Holder
-function AddGod(roba) {
-	return // LA FUNZIONA RITORNA XD
+function AddGod() {
+	
+	const gods = ["Era", "Demetra", "Estia", "Atena", "Artemide", "Afrodite", "Ares", "Efesto", "Hermes", "Dioniso"];
+	const randomElement = gods[Math.floor(Math.random() * gods.length)];
+	let newGod = randomElement;
+	let newUser = document.getElementById("profiles");
+	newUser.innerHTML = `<div class="profile"><a href="./home.html?user=${newGod}&id=god"><img src="./assets/img/profiles/ProfilePicture5.jpg" alt="Profile5"></a><h4>${newGod}</h4></div>` + newUser.innerHTML;
+
 }

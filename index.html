@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/profiles/ProfilePicture1.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
-
+    <script type="text/javascript" src="./assets/js/currentUser.js"></script>
     <title>Godflex</title>
 </head>
 <body>
 
     <header>
         <div class="logo">
-            <img src="./assets/img/logo.png" alt="Netflix-logo">
+            <a href="#"><img src="./assets/img/logo.png" alt="Netflix-logo"></a>
         </div>
 
     </header>
@@ -22,7 +23,7 @@
             <h1>Chi Vuole Guardare Godflex ?</h1>
 
             <!-- profile div -->
-            <div class="profile-container">
+            <div id="profiles" class="profile-container">
                 <div class="profile">
                     <a href="./home.html?user=zeus"><img src="./assets/img/profiles/ProfilePicture1.png" alt="Profile1"></a>
                     <h4>Zeus</h4>
@@ -40,7 +41,7 @@
                     <h4>Apollo</h4>
                 </div>
                 <div class="profile">
-                    <a href="#"><img src="./assets/img/profiles/addProfile.png" alt="AddProfile"></a>
+                    <a href="javascript:javascript:void(0" onClick="javascript:AddGod()"><img src="./assets/img/profiles/addProfile.png" alt="AddProfile"></a>
                     <h4>Add God</h4>
                 </div>
             </div>
