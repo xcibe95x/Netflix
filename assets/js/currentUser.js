@@ -23,36 +23,43 @@ window.onload = function() {
 
 	let profile = document.getElementById("profile-picture");
 	let god = document.getElementById("god-name");
+	let god2 = document.getElementById("god-name-cards");
 
 
 	if ($_GET['user'] == '') {
 		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture2.png" alt="Profileimg">`;
 		god.innerHTML = `Zeus`;
+		god2.innerHTML = `Zeus`;
 	}
 
 	if ($_GET['user'] == "zeus") {
 		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture1.png" alt="Profileimg">`;
 		god.innerHTML = `Zeus`;
+		god2.innerHTML = `Zeus`;
 	}
 
 	if ($_GET['user'] == "ade") {
 		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture2.png" alt="Profileimg">`;
 		god.innerHTML = `Ade`;
+		god2.innerHTML = `Ade`;
 	}
 
 	if ($_GET['user'] == "poseidone") {
 		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture3.png" alt="Profileimg">`;
 		god.innerHTML = `Poseidone`;
+		god2.innerHTML = `Poseidone`;
 	}
 
 	if ($_GET['user'] == "apollo") {
 		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture4.png" alt="Profileimg">`;
 		god.innerHTML = `Apollo`;
+		god2.innerHTML = `Apollo`;
 	}
 
 	if ($_GET['id'] == "god") {
 		profile.innerHTML = `<img src="./assets/img/profiles/ProfilePicture5.jpg" alt="Profileimg">`;
 		god.innerHTML = $_GET['user'];
+		god2.innerHTML = $_GET['user'];
 	}
 
 }

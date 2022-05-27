@@ -596,6 +596,7 @@ ul li:not(:first-of-type) a:hover {
 .big-movie-poster img {
   max-height: 575px;
   max-width: 285px;
+  width: 16vw;
   border-radius: 2px;
 }
 
@@ -603,7 +604,7 @@ ul li:not(:first-of-type) a:hover {
   padding: 0 60px 0 60px;
 }
 
-.movie-poster {
+.movie-poster, .big-movie-poster {
   position: relative;
   cursor: pointer;
   padding-top: 10px;
@@ -616,6 +617,10 @@ ul li:not(:first-of-type) a:hover {
 
 .movie-poster:hover img:last-child {
   display: none;
+}
+
+.top10flex:hover img:last-child {
+  display: block;
 }
 
 .media-player {
@@ -765,6 +770,12 @@ ul li:not(:first-of-type) a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -20px;
+}
+
+.top10fix {
+  margin-top: 40px;
+  margin-bottom: 35px;
 }
 
 .top10flex img{
