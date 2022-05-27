@@ -101,12 +101,6 @@ html {
     --danger: #dc3545;
     --light: #f8f9fa;
     --dark: #343a40;
-    /* Device Breakpoints */
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
 }
 
 /* GENERAL */
@@ -118,9 +112,17 @@ body {
     width: 100%;
     min-width: 216px;
     overflow-x: hidden;
+    position: relative;
 }
 
 h1 {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 81.73px;
+}
+
+h2 {
   color: #fff;
   font-size: 64px;
   font-weight: 400;
@@ -138,6 +140,10 @@ h4 {
   font-size: 26px;
   font-weight: 400;
   line-height: 33.2px;
+}
+
+span {
+  color: white;
 }
 
 .logo {
@@ -270,13 +276,10 @@ h4 {
 /* End index page  */
 
 
-ul{list-style-type: none;}
-
-/* Utilities */
-
-.d-flex{display: flex;}
 
 /* navbar */
+
+ul { list-style-type: none; }
 
 .navdesktop { 
   display: flex;
@@ -346,12 +349,13 @@ ul li a,.dropdown a{
 {
   background: var(--black);
   position: absolute; 
-  left: 0;
-  top: 50px;
   visibility: hidden;
-  width: 170px;
+  width: 200px;
   padding: 16px 0;
-  z-index: 5;
+  z-index: 1;
+  transition: ease-in 0.2s;
+  right: 0;
+  top: 84px;
 }
 
 .licontainer:hover .dropdown{
@@ -452,7 +456,7 @@ ul li a,.dropdown a{
 }
 
 .movieinfo .item1 {
-  max-width: 408px;
+  min-width: 408px;
   height: 115px;
   background-image: url(./assets/img/posters/MovieName.png);
   background-position: bottom center;
@@ -534,6 +538,17 @@ ul li a,.dropdown a{
   bottom: 0;
   width: 100%;
   height: 210px;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(20,20,20,0)),color-stop(15%,rgba(20,20,20,.15)),color-stop(29%,rgba(20,20,20,.35)),color-stop(44%,rgba(20,20,20,.58)),color-stop(68%,#141414),to(#141414));
+  background-image: -webkit-linear-gradient(top,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+  background-image: -moz- oldlinear-gradient(top,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+  background-image: -o-linear-gradient(top,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+  background-image: linear-gradient(to bottom,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 0 top;
+  background-repeat: repeat-x;
+  background-color: transparent;
 }
 
 /* End Movie poster */
@@ -551,11 +566,6 @@ ul li a,.dropdown a{
   scrollbar-width: none;  /* Firefox */
 }
 
-.popular-container .movie-section {
-  position: absolute;
-  z-index: 2;
-}
-
 /* Hide ScrollBar */
 .movie-section::-webkit-scrollbar {
    display: none; /* Safari and Chrome  */
@@ -565,6 +575,7 @@ ul li a,.dropdown a{
 .poster-container {
   display: flex;
   gap: 5px;
+  max-width: 20%;
 }
 
 .movie-poster img {
@@ -594,7 +605,7 @@ ul li a,.dropdown a{
   display: block;
 }
 
-.movie-poster:hover img {
+.movie-poster:hover img:last-child {
   display: none;
 }
 
@@ -602,40 +613,112 @@ ul li a,.dropdown a{
   display: none;
   position: relative;
   z-index: 999;
-  height: 300px;
+  height: 268px;
   width: 284px;
-  background: var(--dark);
+  background: var(--black);
   border-radius: 8px;
   margin-top: 20px;
   margin-bottom: 20px;
   transform: scale(1.2);
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  box-shadow: 2px 1px 3px 0.2px rgba(0, 0, 0, 0.6);
 }
 
 .player-image {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
 }
 
-.hero-vignette {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(20,20,20,0)),color-stop(15%,rgba(20,20,20,.15)),color-stop(29%,rgba(20,20,20,.35)),color-stop(44%,rgba(20,20,20,.58)),color-stop(68%,#141414),to(#141414));
-  background-image: -webkit-linear-gradient(top,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
-  background-image: -moz- oldlinear-gradient(top,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
-  background-image: -o-linear-gradient(top,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
-  background-image: linear-gradient(to bottom,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  background-size: 100% 100%;
-  background-position: 0 top;
-  background-repeat: repeat-x;
-  background-color: transparent;
-  width: 100%;
-  height: 14.7vw;
-  top: 0;
-  left: 0;
-  opacity: 1;
-  position: absolute;
+.player-container {
+  display: flex;
+  padding: 14px;
+  gap: 10px;
+  color: white;
+}
 
+.player-container:last-child {
+  padding: 0 14px;
+}
+
+.vm14 {
+  color: white;
+  border: 1px solid var(--clearwhite);
+  padding: 1px 8px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.vm14::before {
+  content: 'VM14';
+}
+
+.card-play, .card-add, .card-like, .card-more {
+  position: relative;
+  border: 2px solid var(--gray);
+  background: var(--dark);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  align-items: flex-end;
+}
+
+.card-play:hover, .card-add:hover, .card-like:hover, .card-more:hover {
+  border: 2px solid var(--white);
+  cursor: pointer;
+}
+
+.card-play:hover {
+  background: var(--smokeWhite);
+  border: 2px solid var(--smokeWhite);
+}
+
+.card-play {
+  border: 2px solid var(--white);
+  background: var(--white);
+}
+
+.card-more {
+  margin-left: 100px;
+}
+
+.card-play::before {
+  content: url('./assets/img/posters/VectorPlay.svg');
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transform: scale(.8);
+}
+
+.card-add::before {
+  content: url('./assets/img/navigation/plus.svg');
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  filter: invert();
+  transform: scale(.8);
+}
+
+.card-like::before {
+  content: url('./assets/img/navigation/like.svg');
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  filter: invert();
+  transform: scale(.8);
+}
+
+.card-more::before {
+  content: url('./assets/img/navigation/down-arrow.svg');
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  filter: invert();
+  transform: scale(.8);
+}
+
+.compatible {
+  color: #45D068;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .god-container {
@@ -687,11 +770,6 @@ ul li a,.dropdown a{
 .top10flex:first-child .numberstop
 {
   left: 14%;
-}
-
-.top10container{
-  overflow-y: hidden;
-  overflow-x: scroll;
 }
 
 .top10container::-webkit-scrollbar {
