@@ -343,7 +343,6 @@ ul li:not(:first-of-type) a:hover {
 
 .nav-container {
   flex-grow: 1;
-  overflow: hidden;
 }
 
 .ul-1,.ul-2{
