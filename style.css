@@ -130,7 +130,7 @@ h2 {
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 1.25vw;
   font-weight: 500;
   line-height: 33.2px;
   color: var(--smokeWhite);
@@ -343,6 +343,7 @@ ul li:not(:first-of-type) a:hover {
 
 .nav-container {
   flex-grow: 1;
+  overflow: hidden;
 }
 
 .ul-1,.ul-2{
@@ -453,7 +454,7 @@ ul li:not(:first-of-type) a:hover {
 }
 
 .movieinfo .item1 {
-  min-width: 408px;
+  min-width: 353px;
   height: 115px;
   background-image: url(./assets/img/posters/MovieName.png);
   background-position: bottom center;
@@ -600,7 +601,7 @@ ul li:not(:first-of-type) a:hover {
 }
 
 .section-title {
-  padding: 0 60px 0 60px;
+  padding: 0 10px 0 60px;
 }
 
 .movie-poster, .big-movie-poster {
@@ -750,14 +751,43 @@ ul li:not(:first-of-type) a:hover {
 }
 
 .top-ten {
-  width: 26px;
-  height: 38px;
+  width: 16%;
+  height: 32%;
+  max-height: 36px;
+  max-width: 26px;
   background-image: url('./assets/img/posters/Top10Card.png');
   background-size: cover;
   position: absolute;
   top: 10px;
   right: 0;
   border-top-right-radius: 4px;
+}
+
+.popular-container h3, .god-container h3, .big-container h3 {
+  display: inline-block;
+}
+
+.section-title:hover + .see-all {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: transform .4s ease, background-position .4s, opacity 1.2s;
+  background-position: right;
+}
+
+.see-all {
+  position: relative;
+  z-index: 2;
+  padding-right: 1em;
+  display: inline-block;
+  opacity: 0;
+  color: #54b9c5;
+  font-weight: 500;
+  font-size: max(10px, .8vw);
+  background-image: url('./assets/img/navigation/arrow.svg');
+  background-repeat: no-repeat;
+  background-size: auto max(8px, 0.9vw);
+  background-position: 60px;
+  transform: translate(-20px, .5px);
 }
 
 /* End of Movie Cards Sections */
@@ -780,7 +810,8 @@ ul li:not(:first-of-type) a:hover {
 .top10flex img{
   z-index: 1;
   max-height: 200px;
-  max-width: 135px
+  max-width: 135px;
+  width:7vw;
 }
 
 .numberstop{
@@ -791,11 +822,11 @@ ul li:not(:first-of-type) a:hover {
    3px -3px 0 gray,
   -3px 3px 0 gray,
    3px 3px 0 gray;
-  font-size: 250px;
+  font-size: 13vw;
   position: relative;
   line-height: 250px;
   left: 12%;
-  top: -3%;
+  top:-3%;
   color: black;
 }
 
@@ -888,7 +919,8 @@ footer {
 
 
 @media screen and (max-width:380px){
-  .licontainer a img, .nav-links,.item3, .movieinfo .item3 {
+  /* Nav + Movie poster */
+  .licontainer a img, .nav-links,.item3, .movieinfo .item3 , #god-name, .nav-items li:first-child a img {
     display:none;
   }
 
@@ -896,13 +928,26 @@ footer {
     display: flex;
   }
 
+  .browse a {
+    font-size :8px;
+  }
+
+  .drop {
+    padding-left: 4px;
+  }
+
+  .drop img{
+    width: 12px;
+    height:10px;
+  }
+
   .logo{
     padding: 10px 20px;
   }
 
   .logo img{
-    height: 25px;
-    width: 80px;
+    height: 15px;
+    width: 46.56px;
   }
 
   .navdesktop{
@@ -913,7 +958,10 @@ footer {
   }
 
   .movieposter{
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    margin-bottom:70px
   }
 
   .movieinfo-pos{
@@ -978,5 +1026,32 @@ footer {
     margin-right: 10px;
     padding: 0;
   }
+  /* card oneste */
+  .popular-container{
+    top:72%;
+    background-image: none;
+  }
+
+  .section-title{
+    padding: 20px 0 0 20px;
+    font-size : 14px;
+    line-height: 14px;
+  }
+  .movie-section{
+    padding:0 20px;
+  }
+  .movie-poster {
+    padding-top: 5px;
+  }
+  .movie-poster img{
+    width: 45vw;
+  }
+
+  .god-container{
+    max-height: 140px;
+  }
+
+  /* Top 10 bordello */
+
 
 }
