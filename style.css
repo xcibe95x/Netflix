@@ -130,7 +130,7 @@ h2 {
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 1.25vw;
   font-weight: 500;
   line-height: 33.2px;
   color: var(--smokeWhite);
@@ -339,6 +339,7 @@ ul li:not(:first-of-type) a:hover {
   display: flex;
   gap: 20px;
   justify-content: flex-start;
+  padding-bottom: 4px;
 }
 
 .nav-container {
@@ -454,7 +455,7 @@ ul li:not(:first-of-type) a:hover {
 }
 
 .movieinfo .item1 {
-  min-width: 408px;
+  min-width: 353px;
   height: 115px;
   background-image: url(./assets/img/posters/MovieName.png);
   background-position: bottom center;
@@ -586,7 +587,8 @@ ul li:not(:first-of-type) a:hover {
   max-width: 20%;
 }
 
-.movie-poster img {
+
+.movie-poster > img {
   max-height: 160px;
   max-width: 284px;
   width: 16vw;
@@ -600,8 +602,13 @@ ul li:not(:first-of-type) a:hover {
   border-radius: 2px;
 }
 
+.player-image {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
 .section-title {
-  padding: 0 60px 0 60px;
+  padding: 0 10px 0 60px;
 }
 
 .movie-poster, .big-movie-poster {
@@ -613,6 +620,10 @@ ul li:not(:first-of-type) a:hover {
 
 .movie-poster:hover > .media-player {
   display: block;
+}
+
+.movie-poster:first-child:hover > .media-player {
+  transform: scale(1.2) translateX(24px);
 }
 
 .movie-poster:hover img:last-child {
@@ -637,10 +648,7 @@ ul li:not(:first-of-type) a:hover {
   box-shadow: 2px 1px 3px 0.2px rgba(0, 0, 0, 0.6);
 }
 
-.player-image {
-  width: 100%;
-  border-radius: 8px 8px 0 0;
-}
+
 
 .player-container {
   display: flex;
@@ -751,14 +759,67 @@ ul li:not(:first-of-type) a:hover {
 }
 
 .top-ten {
-  width: 26px;
-  height: 38px;
+  width: 16%;
+  height: 32%;
+  max-height: 36px;
+  max-width: 26px;
   background-image: url('./assets/img/posters/Top10Card.png');
   background-size: cover;
   position: absolute;
   top: 10px;
   right: 0;
   border-top-right-radius: 4px;
+}
+
+.popular-container h3, .god-container h3, .big-container h3 {
+  display: inline-block;
+}
+
+/* .popular-container:hover .section-title::after, .god-container:hover .section-title::after {
+  content: '';
+  padding-right: 1em;
+  padding-bottom: .3rem;
+  background-image: url('./assets/img/navigation/arrow.svg');
+  background-repeat: no-repeat;
+  background-size: auto max(8px, 0.9vw);
+  background-position: 5px;
+  opacity: 1;
+  transform: translateX(550px);
+} */
+
+.section-title:hover ~ .see-all, .see-all::before {
+  content: 'Sfoglia tutti';
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: transform .4s ease, background-position .4s, opacity 1.2s;
+  background-position: right;
+}
+
+.section-title:hover ~ .see-all-notext {
+  display: none;
+}
+
+.popular-container:hover .see-all-notext, .god-container:hover .see-all-notext, .big-container:hover .see-all-notext {
+  opacity: 1;
+  transform: translate(-10px, 3px);
+  transition: transform .4s ease, background-position .4s, opacity 1.2s;
+  background-position: right;
+  width: 20px;
+  height: 20px;
+}
+
+.see-all, .see-all-notext {
+  padding-right: 1em;
+  display: inline-block;
+  opacity: 0;
+  color: #54b9c5;
+  font-weight: 500;
+  font-size: max(10px, .8vw);
+  background-image: url('./assets/img/navigation/arrow.svg');
+  background-repeat: no-repeat;
+  background-size: auto max(8px, 0.9vw);
+  background-position: 60px;
+  transform: translate(-20px, .5px);
 }
 
 /* End of Movie Cards Sections */
@@ -889,7 +950,7 @@ footer {
 }
 
 
-@media screen and (max-width:380px){
+@media screen and (max-width:480px){
   /* Nav + Movie poster */
   .licontainer a img, .nav-links,.item3, .movieinfo .item3 , #god-name, .nav-items li:first-child a img {
     display:none;
@@ -1025,4 +1086,73 @@ footer {
   /* Top 10 bordello */
 
 
+  .movie-poster:hover > .media-player {
+    display: none;
+  }
+
+  .movie-poster:hover img:last-child {
+    display: block;
+  }
+
+  /* card oneste */
+  .popular-container{
+    top:72%;
+    background-image: none;
+  }
+
+  .section-title{
+    padding: 20px 0 0 20px;
+    font-size : 14px;
+    line-height: 14px;
+  }
+  .movie-section{
+    padding:0 20px;
+  }
+  .movie-poster {
+    padding-top: 5px;
+  }
+  .movie-poster img{
+    width: 45vw;
+  }
+
+  .god-container{
+    max-height: 140px;
+  }
+  
+  .top10flex img {
+    max-height: 200px;
+    max-width: 135px;
+    width: 20vw;
+  }
+
+  .numberstop {
+    text-shadow: -1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 gray, 1px 1px 0 gray;
+    font-size: 36vw;
+    position: relative;
+    line-height: 250px;
+    left: 12%;
+    top: -3%;
+    color: black;
+  }
+
+  .top10flex {
+    margin-top: -50px;
+  }
+
+  .top10fix {
+    margin-top: -10px;
+  }
+
+  .movieinfo {
+    padding-left: 5px;
+  }
+
+  /* Top 10 bordello */
+  
+}
+
+@media screen and (max-width: 2200px) {
+  .numberstop {
+    top: 0;
+  }
 }
