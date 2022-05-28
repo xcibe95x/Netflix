@@ -587,7 +587,8 @@ ul li:not(:first-of-type) a:hover {
   max-width: 20%;
 }
 
-.movie-poster img {
+
+.movie-poster > img {
   max-height: 160px;
   max-width: 284px;
   width: 16vw;
@@ -599,6 +600,11 @@ ul li:not(:first-of-type) a:hover {
   max-width: 285px;
   width: 16vw;
   border-radius: 2px;
+}
+
+.player-image {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
 }
 
 .section-title {
@@ -614,6 +620,10 @@ ul li:not(:first-of-type) a:hover {
 
 .movie-poster:hover > .media-player {
   display: block;
+}
+
+.movie-poster:first-child:hover > .media-player {
+  transform: scale(1.2) translateX(24px);
 }
 
 .movie-poster:hover img:last-child {
@@ -638,10 +648,7 @@ ul li:not(:first-of-type) a:hover {
   box-shadow: 2px 1px 3px 0.2px rgba(0, 0, 0, 0.6);
 }
 
-.player-image {
-  width: 100%;
-  border-radius: 8px 8px 0 0;
-}
+
 
 .player-container {
   display: flex;
