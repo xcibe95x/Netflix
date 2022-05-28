@@ -339,6 +339,7 @@ ul li:not(:first-of-type) a:hover {
   display: flex;
   gap: 20px;
   justify-content: flex-start;
+  padding-bottom: 4px;
 }
 
 .nav-container {
@@ -942,7 +943,7 @@ footer {
 }
 
 
-@media screen and (max-width:380px){
+@media screen and (max-width:480px){
   /* Nav + Movie poster */
   .licontainer a img, .nav-links,.item3, .movieinfo .item3 , #god-name, .nav-items li:first-child a img {
     display:none;
@@ -1078,4 +1079,10 @@ footer {
   /* Top 10 bordello */
 
 
+}
+
+@media screen and (max-width: 2200px) {
+  .numberstop {
+    top: 0;
+  }
 }
