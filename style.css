@@ -781,7 +781,8 @@ ul li:not(:first-of-type) a:hover {
 .top10flex img{
   z-index: 1;
   max-height: 200px;
-  max-width: 135px
+  max-width: 135px;
+  width:7vw;
 }
 
 .numberstop{
@@ -792,10 +793,11 @@ ul li:not(:first-of-type) a:hover {
    3px -3px 0 gray,
   -3px 3px 0 gray,
    3px 3px 0 gray;
-  font-size: 250px;
+  font-size: 13vw;
   position: relative;
   line-height: 250px;
   left: 12%;
+  top:-3%;
   color: black;
 }
 
@@ -888,7 +890,8 @@ footer {
 
 
 @media screen and (max-width:380px){
-  .licontainer a img, .nav-links,.item3, .movieinfo .item3 {
+  /* Nav + Movie poster */
+  .licontainer a img, .nav-links,.item3, .movieinfo .item3 , #god-name, .nav-items li:first-child a img {
     display:none;
   }
 
@@ -896,13 +899,26 @@ footer {
     display: flex;
   }
 
+  .browse a {
+    font-size :8px;
+  }
+
+  .drop {
+    padding-left: 4px;
+  }
+
+  .drop img{
+    width: 12px;
+    height:10px;
+  }
+
   .logo{
     padding: 10px 20px;
   }
 
   .logo img{
-    height: 25px;
-    width: 80px;
+    height: 15px;
+    width: 46.56px;
   }
 
   .navdesktop{
@@ -913,7 +929,10 @@ footer {
   }
 
   .movieposter{
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    margin-bottom:70px
   }
 
   .movieinfo-pos{
@@ -978,5 +997,32 @@ footer {
     margin-right: 10px;
     padding: 0;
   }
+  /* card oneste */
+  .popular-container{
+    top:72%;
+    background-image: none;
+  }
+
+  .section-title{
+    padding: 20px 0 0 20px;
+    font-size : 14px;
+    line-height: 14px;
+  }
+  .movie-section{
+    padding:0 20px;
+  }
+  .movie-poster {
+    padding-top: 5px;
+  }
+  .movie-poster img{
+    width: 45vw;
+  }
+
+  .god-container{
+    max-height: 140px;
+  }
+
+  /* Top 10 bordello */
+
 
 }
