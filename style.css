@@ -795,6 +795,7 @@ ul li:not(:first-of-type) a:hover {
   position: relative;
   line-height: 250px;
   left: 12%;
+  top: -3%;
   color: black;
 }
 
