@@ -767,16 +767,40 @@ ul li:not(:first-of-type) a:hover {
   display: inline-block;
 }
 
-.section-title:hover + .see-all {
+/* .popular-container:hover .section-title::after, .god-container:hover .section-title::after {
+  content: '';
+  padding-right: 1em;
+  padding-bottom: .3rem;
+  background-image: url('./assets/img/navigation/arrow.svg');
+  background-repeat: no-repeat;
+  background-size: auto max(8px, 0.9vw);
+  background-position: 5px;
+  opacity: 1;
+  transform: translateX(550px);
+} */
+
+.section-title:hover ~ .see-all, .see-all::before {
+  content: 'Sfoglia tutti';
   opacity: 1;
   transform: translate(0, 0);
   transition: transform .4s ease, background-position .4s, opacity 1.2s;
   background-position: right;
 }
 
-.see-all {
-  position: relative;
-  z-index: 2;
+.section-title:hover ~ .see-all-notext {
+  display: none;
+}
+
+.popular-container:hover .see-all-notext, .god-container:hover .see-all-notext, .big-container:hover .see-all-notext {
+  opacity: 1;
+  transform: translate(-10px, 3px);
+  transition: transform .4s ease, background-position .4s, opacity 1.2s;
+  background-position: right;
+  width: 20px;
+  height: 20px;
+}
+
+.see-all, .see-all-notext {
   padding-right: 1em;
   display: inline-block;
   opacity: 0;
