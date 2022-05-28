@@ -1051,6 +1051,15 @@ footer {
     margin-right: 10px;
     padding: 0;
   }
+
+  .movie-poster:hover > .media-player {
+    display: none;
+  }
+
+  .movie-poster:hover img:last-child {
+    display: block;
+  }
+
   /* card oneste */
   .popular-container{
     top:72%;
@@ -1074,6 +1083,30 @@ footer {
 
   .god-container{
     max-height: 140px;
+  }
+  
+  .top10flex img {
+    max-height: 200px;
+    max-width: 135px;
+    width: 20vw;
+  }
+
+  .numberstop {
+    text-shadow: -1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 gray, 1px 1px 0 gray;
+    font-size: 36vw;
+    position: relative;
+    line-height: 250px;
+    left: 12%;
+    top: -3%;
+    color: black;
+  }
+
+  .top10flex {
+    margin-top: -50px;
+  }
+
+  .top10fix {
+    margin-top: -10px;
   }
 
   /* Top 10 bordello */
