@@ -437,6 +437,17 @@ ul li:not(:first-of-type) a:hover {
   right: 0;
 }
 
+#background-video {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 906px;
+}
+
 .movieposter {
   width: 100%;
   height: 906px;
@@ -992,6 +1003,16 @@ footer {
   .movieinfo .item3 p {
     max-width: 480px;
   }
+
+  #background-video {
+    display: none;
+  }
+
+  .movieposter{
+    background-size: cover;
+    background-position: center;
+  }
+
 }
 
 /* Mobile Size */

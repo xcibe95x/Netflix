@@ -95,6 +95,22 @@
     </nav>
 
     <div class="movieposter">
+    <!-- Hero Video and Picture Inline Media Queries -->
+
+    <!-- Picture Fallback -->
+    <!-- <picture>
+            <source srcset="./assets/img/posters/MoviePoster.png" media="(min-width: 1080px)" />
+            <source srcset="./assets/img/posters/MoviePoster.png" media="(min-width: 860px)" />
+            <source srcset="./assets/img/posters/MoviePoster.png" media="(min-width: 480px)" />
+            <img src="./assets/img/posters/MoviePoster.png" srcset="./assets/img/posters/MoviePoster.png" alt="Movie" repeat="no-repeat" />
+    </picture>   -->
+
+    <!-- Video Player -->
+    <video id="background-video" autoplay muted poster="./assets/img/posters/MoviePoster.png">
+    <source src="./assets/hero/stranger_things.mp4" type="video/mp4">
+    </video>
+
+    <!-- Film Rating And Infos -->
         <span class="rating">VM14</span>
         <div class="movieinfo-pos">
             <div class="movieinfo">
@@ -114,6 +130,7 @@
             </div>
         </div>
     </div>
+    
     
  
 <!-- Popular Section -->
