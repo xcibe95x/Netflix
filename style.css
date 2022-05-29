@@ -304,6 +304,10 @@ ul { list-style-type: none; }
   right: 65px;
 }
 
+.nav-items li:nth-child(2) {
+  margin-bottom: 6px;
+}
+
 #profile-picture img, .dropdown:not(:empty) li img {
   height: 32px;
   width: 32px;
@@ -871,15 +875,8 @@ ul li:not(:first-of-type) a:hover {
   position: relative;
   line-height: 250px;
   left: 12%;
-  top: -3%;
+  top: 0vh;
   color: black;
-}
-
-/* Fix my huge screen numbers position */
-@media screen and (min-height: 800px) {
-  .numberstop {
-    top: 0;
-  }
 }
 
 .top10flex:first-child .numberstop
@@ -1209,7 +1206,7 @@ footer {
     position: relative;
     line-height: 250px;
     left: 12%;
-    top: 0;
+    top: 0vh;
     color: black;
   }
 
@@ -1227,11 +1224,4 @@ footer {
 
   /* Top 10 bordello */
   
-}
-
-/* Mad Numbers Fix on Different Height Screens */
-@media screen and (max-height: 480px) {
-  .numberstop {
-    top: -2%;
-  }
 }
