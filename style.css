@@ -423,9 +423,6 @@ ul li:not(:first-of-type) a:hover {
   padding-left: 7px;
 }
 
-
-
-
 /* Movie poster */
 
 
@@ -445,9 +442,9 @@ ul li:not(:first-of-type) a:hover {
   object-fit: cover;
   left: 0;
   right: 0;
-  top: 0;
+  top: -120px;
   bottom: 0;
-  height: 906px;
+  height: 1021px;
 }
 
 .movieposter {
@@ -1216,10 +1213,4 @@ footer {
 
   /* Top 10 bordello */
   
-}
-
-@media screen and (max-width: 2200px) {
-  .numberstop {
-    top: 0;
-  }
 }
