@@ -473,9 +473,9 @@ ul li:not(:first-of-type) a:hover {
 }
 
 .movieinfo .item2 p {
-    font-size: 30px;
+    font-size: max(24px, 1.6vw);
     color: var(--white);
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .movieinfo .item2{
@@ -486,6 +486,8 @@ ul li:not(:first-of-type) a:hover {
   max-width: 408px;
   height: 38px;
   gap: 15px;
+  word-wrap: normal;
+  white-space: nowrap;
 }
 
 .movieinfo.item3{
@@ -493,7 +495,8 @@ ul li:not(:first-of-type) a:hover {
   height: 132px;
 }
 .movieinfo .item3 p {
-  font-size: 26px;
+  margin-top: 10px;
+  font-size: max(16px, 1.3vw);
   font-weight: 400;
   color: var(--white);
 }
@@ -947,10 +950,54 @@ footer {
   height: 1em;
 }
 
+/* Tablet Size */
+@media screen and (max-width:884px) {
+  /* Nav + Movie poster */
+  .licontainer a img, .nav-links, li:nth-child(2) {
+    display: none;
+  }
 
+  .browse{
+    display: flex;
+  }
+
+  .browse a {
+    font-size :8px;
+  }
+
+  .drop {
+    padding-left: 4px;
+  }
+
+  .drop img{
+    width: 12px;
+    height:10px;
+  }
+  
+  .logo{
+    padding: 10px 20px;
+  }
+
+  .logo img{
+    height: 15px;
+    width: 46.56px;
+  }
+
+  .navdesktop{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+    background-color: transparent;
+    padding:0;
+  }
+  
+  .movieinfo .item3 p {
+    max-width: 480px;
+  }
+}
+
+/* Mobile Size */
 @media screen and (max-width:480px){
   /* Nav + Movie poster */
-  .licontainer a img, .nav-links,.item3, .movieinfo .item3 , #god-name, .nav-items li:first-child a img {
+  .licontainer a img, .nav-links,.item3, .movieinfo .item3 , li:nth-child(2), .nav-items li:first-child a img {
     display:none;
   }
 
