@@ -427,6 +427,15 @@ ul li:not(:first-of-type) a:hover {
 /* Movie poster */
 
 
+.rating {
+  padding: 14px 48px;
+  font-size: 18px;
+  border-left: 2px solid var(--smokeWhite);
+  position: absolute;
+  background: #4242424b;
+  top: 60%;
+  right: 0;
+}
 
 .movieposter {
   width: 100%;
