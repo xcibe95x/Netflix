@@ -381,10 +381,11 @@ ul li:not(:first-of-type) a:hover {
 .keepopen{
   display: block;
   width: 50px;
-  height: 30px;
+  height: 50px;
   position: absolute;
   right: 50px;
-  top: 50px;
+  top: 30px;
+  cursor: pointer;
 }
 
 .keepopen:hover .dropdown{
