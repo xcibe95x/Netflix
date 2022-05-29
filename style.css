@@ -916,6 +916,7 @@ footer {
   margin: 0 auto;
   color: var(--dark);
   font-size: max(16px, 1.2vw);
+  margin-bottom: 50px;
 }
 
 .link {
@@ -952,6 +953,10 @@ footer {
   color: var(--clearwhite);
 }
 
+.footer-links a:hover{
+  text-decoration: underline;
+}
+
 .service-code{
   display: block;
   margin-bottom: 1em;
@@ -959,10 +964,16 @@ footer {
   background-color: #141414;
   border: 1px solid var(--clearwhite);
   padding: 6px 4px;
+  cursor: pointer;
+}
+
+.service-code:hover{
+  border: 1px solid var(--smokeWhite);
+  color: var(--smokeWhite);
 }
 
 .copyright{
-  font-size: max(10px, .9vw);
+  font-size: max(7px, .7vw);
   color: var(--clearwhite);
 }
 
@@ -1154,6 +1165,13 @@ footer {
     padding: 0;
   }
   /* card oneste */
+  .popular-container:hover .see-all-notext, .god-container:hover .see-all-notext, .big-container:hover .see-all-notext {
+    height: 15px;
+  }
+
+  .top-ten{
+    top:5px;
+  }
   .popular-container{
     top:72%;
     background-image: none;
@@ -1165,7 +1183,7 @@ footer {
     line-height: 14px;
   }
   .movie-section{
-    padding:0 20px;
+    padding: 0 20px;
   }
   .movie-poster {
     padding-top: 5px;
@@ -1190,6 +1208,7 @@ footer {
   }
 
   /* card oneste */
+
   .popular-container{
     top:72%;
     background-image: none;
