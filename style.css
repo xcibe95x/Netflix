@@ -879,6 +879,12 @@ ul li:not(:first-of-type) a:hover {
   color: black;
 }
 
+@media screen and (min-height: 100px) {
+  .numberstop {
+    top: -1vh;
+  }
+}
+
 .top10flex:first-child .numberstop
 {
   left: 16%;
