@@ -850,14 +850,14 @@ ul li:not(:first-of-type) a:hover {
   margin-bottom: 35px;
 }
 
-.top10flex img{
+.top10flex img {
   z-index: 1;
   max-height: 200px;
   max-width: 135px;
   width: max(120px ,7vw);
 }
 
-.numberstop{
+.numberstop {
   font-family: 'Roboto', sans-serif; 
   font-weight: 900;
   text-shadow: 
@@ -869,8 +869,15 @@ ul li:not(:first-of-type) a:hover {
   position: relative;
   line-height: 250px;
   left: 12%;
-  top:-3%;
+  top: -3%;
   color: black;
+}
+
+/* Fix my huge screen numbers position */
+@media screen and (min-height: 800px) {
+  .numberstop {
+    top: 0;
+  }
 }
 
 .top10flex:first-child .numberstop
@@ -1015,7 +1022,7 @@ footer {
 }
 
 /* Mobile Size */
-@media screen and (max-width:480px){
+@media screen and (max-width: 480px){
   /* Nav + Movie poster */
   .licontainer a img, .nav-links,.item3, .movieinfo .item3 , li:nth-child(2), .nav-items li:first-child a img {
     display:none;
@@ -1195,7 +1202,7 @@ footer {
     position: relative;
     line-height: 250px;
     left: 12%;
-    top: -3%;
+    top: 0;
     color: black;
   }
 
@@ -1213,4 +1220,11 @@ footer {
 
   /* Top 10 bordello */
   
+}
+
+/* Mad Numbers Fix on Different Height Screens */
+@media screen and (max-height: 480px) {
+  .numberstop {
+    top: -2%;
+  }
 }
