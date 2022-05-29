@@ -879,7 +879,7 @@ ul li:not(:first-of-type) a:hover {
   color: black;
 }
 
-@media screen and (min-height: 100px) {
+@media screen and (min-height: 200px) and (max-width: 1800px) {
   .numberstop {
     top: -1vh;
   }
