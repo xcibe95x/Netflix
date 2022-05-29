@@ -665,6 +665,10 @@ ul li:not(:first-of-type) a:hover {
   transform: scale(1.2) translateX(24px);
 }
 
+.movie-poster:last-child:hover > .media-player {
+  transform: scale(1.2) translateX(-25px);
+}
+
 .movie-poster:hover img:last-child {
   display: none;
 }
