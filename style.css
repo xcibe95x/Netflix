@@ -170,8 +170,8 @@ span {
 }
 
 .profile a img {
-  max-height: 20vh;
-  max-width: 20vw;
+  max-height: 200px;
+  max-width: 200px;
   border-radius: 4px;
 }
 
@@ -271,9 +271,7 @@ span {
   .profile-container{
     flex-wrap: wrap;
   }
-  .profile{
-    flex-basis: 25%;
-  }
+
 }
 
 @media screen and (max-width:576px) {
