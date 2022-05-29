@@ -294,7 +294,7 @@ ul { list-style-type: none; }
   padding-right: 16px;
   background: #18181899; 
   position: fixed; 
-  z-index: 2;
+  z-index: 9999; /* GOD Index */
 }
 
 .navdesktop div:last-child img {
@@ -428,7 +428,7 @@ ul li:not(:first-of-type) a:hover {
 
 
 .rating {
-  padding: 14px 48px;
+  padding: 1% 3%;
   font-size: 18px;
   border-left: 2px solid var(--smokeWhite);
   position: absolute;
@@ -600,7 +600,7 @@ ul li:not(:first-of-type) a:hover {
 .movie-poster > img {
   max-height: 160px;
   max-width: 284px;
-  width: 16vw;
+  width: max(260px, 16vw);
   border-radius: 4px;
 }
 
@@ -617,6 +617,7 @@ ul li:not(:first-of-type) a:hover {
 }
 
 .section-title {
+  font-size: max(16px, 1.2vw);
   padding: 0 10px 0 60px;
 }
 
@@ -696,7 +697,7 @@ ul li:not(:first-of-type) a:hover {
 .card-play, .card-add, .card-like, .card-more {
   position: relative;
   border: 2px solid var(--gray);
-  background: var(--dark);
+  background: #1f2022;
   border-radius: 50%;
   width: 32px;
   height: 32px;
@@ -784,18 +785,6 @@ ul li:not(:first-of-type) a:hover {
   display: inline-block;
 }
 
-/* .popular-container:hover .section-title::after, .god-container:hover .section-title::after {
-  content: '';
-  padding-right: 1em;
-  padding-bottom: .3rem;
-  background-image: url('./assets/img/navigation/arrow.svg');
-  background-repeat: no-repeat;
-  background-size: auto max(8px, 0.9vw);
-  background-position: 5px;
-  opacity: 1;
-  transform: translateX(550px);
-} */
-
 .section-title:hover ~ .see-all, .see-all::before {
   content: 'Sfoglia tutti';
   opacity: 1;
@@ -852,7 +841,7 @@ ul li:not(:first-of-type) a:hover {
   z-index: 1;
   max-height: 200px;
   max-width: 135px;
-  width:7vw;
+  width: max(120px ,7vw);
 }
 
 .numberstop{
@@ -863,7 +852,7 @@ ul li:not(:first-of-type) a:hover {
    3px -3px 0 gray,
   -3px 3px 0 gray,
    3px 3px 0 gray;
-  font-size: 13vw;
+  font-size: max(220px, 13vw);
   position: relative;
   line-height: 250px;
   left: 12%;
@@ -994,7 +983,6 @@ footer {
   .navdesktop{
     background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
     background-color: transparent;
-    z-index: 9;
     padding:0;
   }
 
